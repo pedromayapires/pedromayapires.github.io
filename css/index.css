@@ -1,0 +1,167 @@
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin: 15px;
+  text-align: center;
+  color: #1b5e20;
+}
+
+h2,
+#photoContainer {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  color: #1b5e20;
+}
+
+h4 {
+  margin: 5px;
+  text-align: center;
+}
+
+.projectContainer {
+  border: 1px solid black;
+}
+
+.contactType,
+.courseType,
+.language,
+.rolesUsed,
+.skillsLearned,
+.skillsUsed {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.skillsUsed {
+  color: #1b5e20;
+}
+
+.skillElement,
+.roleElement {
+  width: 102px;
+  display: flex;
+  border-bottom: 1px solid black;
+  margin: 4px 7px 4px 0;
+  justify-content: flex-end;
+}
+
+#skills,
+#roles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.leftCategories {
+  margin: 15px 15px 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.projectElement {
+  margin-top: 25px;
+}
+
+.projectPeriodRoles,
+.projectEntityProject {
+  /* font-size: medium; */
+  font-weight: 600;
+}
+
+.projectPeriodRoles {
+  color: #1b5e20;
+}
+
+.projectTechnologies {
+  font-size: 9pt;
+}
+
+.courses,
+.languages {
+  margin: 10px 0 10px 0;
+}
+
+#name,
+#intro,
+#projectsHeader {
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+}
+
+#name,
+#projectsHeader {
+  font-size: 18px;
+}
+
+#name {
+  color: #1b5e20;
+}
+
+#intro {
+  font-size: 15px;
+}
+
+#mainContainer {
+  border: 1px solid olivedrab;
+  width: 850px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  /* this is needed but will mess the second page on firefox when printing */
+  display: flex;
+}
+
+#leftContainer {
+  width: 27%;
+  font-size: 9pt;
+  border-right: 1px solid olivedrab;
+  z-index: 9999;
+  background-color: #c8e6c9;
+}
+
+#rightContainer {
+  width: 73%;
+}
+
+#rightHeader {
+  margin-bottom: 25px;
+}
+
+#leftContainer,
+#rightContainer {
+  padding: 5px;
+}
+
+#rightContainer {
+  margin: 0 5px 0 5px;
+}
+#photoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#photo {
+  text-align: center;
+  height: 100px;
+  background-size: cover;
+  border: 1px solid olivedrab;
+  border-radius: 25% 25% 25% 25%;
+}
+
+@media print {
+  #mainContainer {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .pageBreak {
+    page-break-after: always;
+    /* margin-bottom: 50px; */
+  }
+}
