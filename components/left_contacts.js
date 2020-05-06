@@ -16,10 +16,10 @@ class Contacts extends React.Component {
         type: 'Location',
         value: this.props.location
       }),
-      e(ContactElement, {
-        type: 'Mobile',
-        value: this.props.phone_number
-      }),
+      // e(ContactElement, {
+      //   type: 'Mobile',
+      //   value: this.props.phone_number
+      // }),
       e(ContactElement, {
         type: 'Skype',
         value: this.props.skype
