@@ -193,7 +193,7 @@ var DATA = {
       entity: 'Leads4Sales',
       project_company: '',
       project: 'Marketing & Call center',
-      roles: [ 'Backend' ],
+      roles: [ 'Backend', 'Frontend' ],
       description:
         'I created a backoffice in NodeJs and Express using PostgreSql for the database and AngularJs for the frontend, adding pages and features as needed. Created and maintained existing landing pages done in NodeJs, Express and AngularJs, PostgreSql database maintenance, minor helpdesk and system administration PHP scripts maintenance. Ubuntu was used for the development virtual machine.',
       accomplished:
