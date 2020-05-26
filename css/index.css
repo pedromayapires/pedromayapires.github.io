@@ -48,6 +48,31 @@ h4 {
   justify-content: flex-end;
 }
 
+#root {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; */
+}
+
+#notifications {
+  position: absolute;
+  width: 200px;
+  /* border: 1px solid black; */
+  top: 20px;
+  right: 20px;
+}
+
+#settingsDiv {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 200px;
+  /* height: 100px; */
+  /* float: top; */
+  border-radius: 10px;
+  background-color: #c8e6c9;
+}
+
 #skills,
 #roles {
   display: flex;
@@ -150,7 +175,8 @@ h4 {
   height: 100px;
   background-size: cover;
   border: 1px solid olivedrab;
-  border-radius: 25% 25% 25% 25%;
+  /* border-radius: 25% 25% 25% 25%; */
+  border-radius: 10px;
 }
 
 @media print {
@@ -164,4 +190,54 @@ h4 {
     page-break-after: always;
     /* margin-bottom: 50px; */
   }
+
+  .hideOnPrint {
+    display: none;
+  }
 }
+
+/* ********************************* */
+/* Notification data */
+.fadeOut {
+  opacity: 1;
+  background-color: #c8e6c9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  -moz-animation: cssAnimation 3s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 3s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 3s forwards;
+  /* Opera */
+  animation: cssAnimation 3s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  0% {
+    opacity: 1;
+    /* display: none; */
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  0% {
+    opacity: 1;
+    /* display: none; */
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* ********************************* */

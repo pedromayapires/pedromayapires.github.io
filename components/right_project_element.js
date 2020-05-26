@@ -26,7 +26,7 @@ class ProjectElement extends React.Component {
         { className: 'projectEntityProject' },
         this.props.entity + ' | ' + this.props.project
       ),
-      e('p', null, this.props.description),
+      e('div', { className: 'copyValueToClip' }, this.props.description),
       // e('p', null, this.props.accomplished),
       e(
         'p',
