@@ -12,7 +12,9 @@ class ProjectElement extends React.Component {
     return e(
       'p',
       { className: 'projectPeriodRoles' },
-      periodString + ' | ' + rolesString
+      e('div', { className: 'copyValueToClip' }, periodString),
+      ' | ',
+      e('div', { className: 'copyValueToClip' }, rolesString)
     );
   };
 
@@ -24,7 +26,9 @@ class ProjectElement extends React.Component {
       e(
         'p',
         { className: 'projectEntityProject' },
-        this.props.entity + ' | ' + this.props.project
+        e('div', { className: 'copyValueToClip' }, this.props.entity),
+        ' | ',
+        e('div', { className: 'copyValueToClip' }, this.props.project)
       ),
       e('div', { className: 'copyValueToClip' }, this.props.description),
       // e('p', null, this.props.accomplished),
@@ -32,7 +36,11 @@ class ProjectElement extends React.Component {
         'p',
         { className: 'projectTechnologies' },
         e('label', { className: 'skillsUsed' }, 'Skills used:'),
-        this.props.skills.join(', ')
+        e(
+          'div',
+          { className: 'copyValueToClip' },
+          this.props.skills.join(', ')
+        )
       )
     );
   }

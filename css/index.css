@@ -48,10 +48,9 @@ h4 {
   justify-content: flex-end;
 }
 
-#root {
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; */
+.smallWarning {
+  font-size: 12px;
+  text-align: center;
 }
 
 #notifications {
@@ -65,7 +64,7 @@ h4 {
 #settingsDiv {
   border: 1px solid black;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 0px 5px 5px 5px;
   width: 200px;
   /* height: 100px; */
   /* float: top; */
@@ -154,6 +153,7 @@ h4 {
 
 #rightHeader {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 #leftContainer,
@@ -179,21 +179,8 @@ h4 {
   border-radius: 10px;
 }
 
-@media print {
-  #mainContainer {
-    border: none;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .pageBreak {
-    page-break-after: always;
-    /* margin-bottom: 50px; */
-  }
-
-  .hideOnPrint {
-    display: none;
-  }
+.copyValueToClip {
+  display: inline-block;
 }
 
 /* ********************************* */
@@ -241,3 +228,20 @@ h4 {
   }
 }
 /* ********************************* */
+
+@media print {
+  #mainContainer {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .pageBreak {
+    page-break-after: always;
+    /* margin-bottom: 50px; */
+  }
+
+  .hideOnPrint {
+    display: none;
+  }
+}

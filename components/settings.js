@@ -9,6 +9,7 @@ class Settings extends React.Component {
     return e(
       'div',
       { id: 'settingsDiv', className: 'hideOnPrint' },
+      e('p', { className: 'smallWarning' }, "This won't show on print"),
       e(
         'label',
         null,

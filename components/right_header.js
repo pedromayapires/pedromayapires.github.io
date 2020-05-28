@@ -9,8 +9,12 @@ class RightHeader extends React.Component {
     return e(
       'div',
       { id: 'rightHeader' },
-      e('div', { id: 'name' }, this.props.name),
-      e('div', { id: 'intro' }, this.props.intro)
+      e('div', { id: 'name', className: 'copyValueToClip' }, this.props.name),
+      e(
+        'div',
+        { id: 'intro', className: 'copyValueToClip' },
+        this.props.intro
+      )
     );
   }
 }

@@ -27,7 +27,6 @@ let showMessage = (message) => {
 };
 
 document.querySelectorAll('.copyValueToClip').forEach((element) => {
-  // element.ondblclick = function() {
   element.onclick = function() {
     if (document.getElementById('quickCopyCheck').checked) {
       const tempElement = document.createElement('textarea');
@@ -37,10 +36,7 @@ document.querySelectorAll('.copyValueToClip').forEach((element) => {
       tempElement.select();
       document.execCommand('copy');
       document.body.removeChild(tempElement);
-      showMessage('Copied text');
+      showMessage('Copied: ' + event.target.innerHTML);
     }
   };
 });
-
-// showMessage('treta');
-// showMessage('treta2');
