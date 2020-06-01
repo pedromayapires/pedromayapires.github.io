@@ -54,7 +54,7 @@ h4 {
 }
 
 #notifications {
-  position: absolute;
+  position: fixed;
   width: 200px;
   /* border: 1px solid black; */
   top: 20px;
@@ -66,10 +66,11 @@ h4 {
   margin-bottom: 10px;
   padding: 0px 5px 5px 5px;
   width: 200px;
-  /* height: 100px; */
-  /* float: top; */
   border-radius: 10px;
   background-color: #c8e6c9;
+}
+.settingsElement {
+  margin: 5px;
 }
 
 #skills,

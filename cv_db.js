@@ -180,7 +180,7 @@ var DATA = {
       period: [ '2017-09-11', '2017-11-01' ],
       entity: 'Agap2It',
       project_company: 'StreamBow',
-      project: 'Maintenance scripts and minor apps',
+      project: 'Python script maintenance and application testing',
       roles: [ 'Backend' ],
       description:
         'Development and maintenance of existing Python scripts for invoicing and other purposes, database, in MySql, structural optimization and network bandwidth application testing from NodeJs and PHP solutions.',
