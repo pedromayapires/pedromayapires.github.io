@@ -1,24 +1,18 @@
 import CourseElement from './left_course_element.js';
 const e = React.createElement;
 
-class Courses extends React.Component {
-  constructor(props) {
-    super(props);
+const Courses = (props) => {
+  let courseArray = [];
+  for (let i = 0; i < props.courses.length; i++) {
+    courseArray.push(e(CourseElement, props.courses[i]));
   }
 
-  render() {
-    let courseArray = [];
-    for (let i = 0; i < this.props.courses.length; i++) {
-      courseArray.push(e(CourseElement, this.props.courses[i]));
-    }
-
-    return e(
-      'div',
-      { id: 'courses' },
-      e('div', { className: 'leftCategories' }, 'Courses'),
-      courseArray
-    );
-  }
-}
+  return e(
+    'div',
+    { id: 'courses' },
+    e('div', { className: 'leftCategories' }, 'Courses'),
+    courseArray
+  );
+};
 
 export default Courses;

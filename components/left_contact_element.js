@@ -1,18 +1,12 @@
 const e = React.createElement;
 
-class ContactElement extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return e(
-      'div',
-      null,
-      e('label', { className: 'contactType' }, this.props.type + ':'),
-      this.props.value
-    );
-  }
-}
+const ContactElement = (props) => {
+  return e(
+    'div',
+    null,
+    e('label', { className: 'contactType' }, props.type + ':'),
+    props.value
+  );
+};
 
 export default ContactElement;

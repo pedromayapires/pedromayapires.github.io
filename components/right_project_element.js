@@ -1,11 +1,10 @@
 const e = React.createElement;
 
-class ProjectElement extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ProjectElement = (props) => {
+  let europeanDateFormat = null;
+  let monthYearFormat = null;
 
-  getPeriodRoles = (period, roles) => {
+  const getPeriodRoles = (period, roles) => {
     let periodString = period[0] + ' to ' + (period[1] ? period[1] : 'Today');
     let rolesString = roles.join(', ');
 
@@ -18,32 +17,31 @@ class ProjectElement extends React.Component {
     );
   };
 
-  render() {
-    return e(
-      'div',
-      { className: 'projectElement' },
-      this.getPeriodRoles(this.props.period, this.props.roles),
-      e(
-        'p',
-        { className: 'projectEntityProject' },
-        e('div', { className: 'copyValueToClip' }, this.props.entity),
-        ' | ',
-        e('div', { className: 'copyValueToClip' }, this.props.project)
-      ),
-      e('div', { className: 'copyValueToClip' }, this.props.description),
-      // e('p', null, this.props.accomplished),
-      e(
-        'p',
-        { className: 'projectTechnologies' },
-        e('label', { className: 'skillsUsed' }, 'Skills used:'),
-        e(
-          'div',
-          { className: 'copyValueToClip' },
-          this.props.skills.join(', ')
-        )
-      )
-    );
-  }
-}
+  let bla = document.getElementsByName('dateFormats');
+  bla.onChange = (e) => {
+    console.log(periodString);
+  };
+
+  return e(
+    'div',
+    { className: 'projectElement' },
+    getPeriodRoles(props.period, props.roles),
+    e(
+      'p',
+      { className: 'projectEntityProject' },
+      e('div', { className: 'copyValueToClip' }, props.entity),
+      ' | ',
+      e('div', { className: 'copyValueToClip' }, props.project)
+    ),
+    e('div', { className: 'copyValueToClip' }, props.description),
+    // e('p', null, props.accomplished),
+    e(
+      'p',
+      { className: 'projectTechnologies' },
+      e('label', { className: 'skillsUsed' }, 'Skills used:'),
+      e('div', { className: 'copyValueToClip' }, props.skills.join(', '))
+    )
+  );
+};
 
 export default ProjectElement;
