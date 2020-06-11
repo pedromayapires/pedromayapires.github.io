@@ -4,7 +4,12 @@ const e = React.createElement;
 const Courses = (props) => {
   let courseArray = [];
   for (let i = 0; i < props.courses.length; i++) {
-    courseArray.push(e(CourseElement, props.courses[i]));
+    courseArray.push(
+      e(CourseElement, {
+        key: 'courseElement' + i,
+        ...props.courses[i]
+      })
+    );
   }
 
   return e(

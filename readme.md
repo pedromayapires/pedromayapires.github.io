@@ -6,3 +6,8 @@ To do:
 
 Note for the live profile
 git@github.com:pedromayapires/pedromayapires.github.io.git
+
+Tutorials that helped:
+https://reactjs.org/docs/hooks-faq.html
+https://codeburst.io/global-state-with-react-hooks-and-context-api-87019cc4f2cf
+https://react.christmas/2019/7

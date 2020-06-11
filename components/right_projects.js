@@ -5,9 +5,16 @@ const e = React.createElement;
 const Projects = (props) => {
   let projectArray = [];
   for (let i = 0; i < props.projects.length; i++) {
-    projectArray.push(e(ProjectElement, props.projects[i]));
+    projectArray.push(
+      e(ProjectElement, {
+        key: 'projectElement' + i,
+        ...props.projects[i]
+      })
+    );
     if (i == 5 || i == 12) {
-      projectArray.push(e('div', { className: 'pageBreak' }));
+      projectArray.push(
+        e('div', { key: 'pageBreakAt' + i, className: 'pageBreak' })
+      );
     }
   }
 

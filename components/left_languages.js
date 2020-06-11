@@ -4,7 +4,12 @@ const e = React.createElement;
 const Languages = (props) => {
   let languageArray = [];
   for (let i = 0; i < props.languages.length; i++) {
-    languageArray.push(e(LanguageElement, props.languages[i]));
+    languageArray.push(
+      e(LanguageElement, {
+        key: 'languageElement' + i,
+        ...props.languages[i]
+      })
+    );
   }
 
   return e(

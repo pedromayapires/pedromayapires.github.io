@@ -45,7 +45,8 @@ const Skills = (props) => {
     skillElementArray.push(
       e(SkillElement, {
         skill: keysSorted[key],
-        years: skillObj[keysSorted[key]].toFixed(1)
+        years: skillObj[keysSorted[key]].toFixed(1),
+        key: 'skillElement' + i
       })
     );
     if (maxLimit && i == maxLimit) {

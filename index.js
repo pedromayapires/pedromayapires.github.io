@@ -1,18 +1,32 @@
 import MainCV from './components/main_cv.js';
 import Settings from './components/settings.js';
 import DATA from './cv_db.js';
+import Store from './utils/store.js';
 
 const e = React.createElement;
 const jsonData = DATA;
 // const { useState } = React;
 // const [state, setState] = useState(initialState);
 
+// ReactDOM.render(
+//   [
+//     e(Settings),
+//     // e(MainCV, { jsonData: jsonData, stateTestInt: stateTestInt }),
+//     e(MainCV, { jsonData: jsonData }),
+//     e('div', { id: 'notifications' })
+//   ],
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
   [
-    e(Settings),
-    // e(MainCV, { jsonData: jsonData, stateTestInt: stateTestInt }),
-    e(MainCV, { jsonData: jsonData }),
-    e('div', { id: 'notifications' })
+    e(
+      Store,
+      {},
+      e(Settings),
+      e(MainCV, { jsonData: jsonData }),
+      e('div', { id: 'notifications' })
+    )
   ],
   document.getElementById('root')
 );

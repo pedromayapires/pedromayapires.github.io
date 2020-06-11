@@ -7,6 +7,7 @@ const Roles = (props) => {
   let currentProject = null;
   let roleObj = {};
   let yearFloatPeriod = 0;
+
   for (let i = 0; i < props.projects.length; i++) {
     currentProject = props.projects[i];
     fromDate = new Date(currentProject.period[0]);
@@ -41,9 +42,11 @@ const Roles = (props) => {
     roleElementArray.push(
       e(RoleElement, {
         role: keysSorted[key],
-        years: roleObj[keysSorted[key]].toFixed(1)
+        years: roleObj[keysSorted[key]].toFixed(1),
+        key: 'roleElement' + i
       })
     );
+
     if (maxLimit && i == maxLimit) {
       break;
     }
