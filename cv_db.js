@@ -46,7 +46,7 @@ var DATA = {
   },
   projects: [
     {
-      period: [ '2019-10-01', '2020-04-17' ],
+      period: [ '2019-10-01', '2020-05-01' ],
       entity: 'Affinity',
       project_company: 'Dohop',
       project: 'Travelling search engine',

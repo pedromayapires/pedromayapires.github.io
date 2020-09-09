@@ -1,11 +1,25 @@
 const e = React.createElement;
 
+let auxGetDateMonthYearFormat = (dateObj) => {
+  // ugly way to get the right month number and appending a 0 if it's a
+  // single digit
+  return (
+    ('0' + (dateObj.getMonth() + 1)).slice(-2) + ' - ' + dateObj.getFullYear()
+  );
+};
+
 const ProjectElement = (props) => {
   let europeanDateFormat = null;
   let monthYearFormat = null;
 
   const getPeriodRoles = (period, roles) => {
-    let periodString = period[0] + ' to ' + (period[1] ? period[1] : 'Today');
+    let toDateString = 'Today';
+    if (period[1]) {
+      toDateString = auxGetDateMonthYearFormat(new Date(period[1]));
+    }
+
+    let fromDateString = auxGetDateMonthYearFormat(new Date(period[0]));
+    let periodString = fromDateString + ' to ' + toDateString;
     let rolesString = roles.join(', ');
 
     return e(
