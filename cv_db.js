@@ -2,7 +2,7 @@ var DATA = {
   personal_info: {
     name: 'Pedro Viana Maya de Oliveira Pires',
     intro:
-      'A versatile Fullstack Python developer with focus on the Backend, Project Manager and Database Arquitect with a good deal of experience in Javascript and a pretty pleasant fellow.',
+      'Fullstack Python developer with focus on the Backend and some experience as Project Manager',
     phone_number: '+35191435887',
     location: 'Oeiras, Portugal',
     email: 'pedromayapires@gmail.com',
@@ -45,6 +45,17 @@ var DATA = {
     // Hibernate: true
   },
   projects: [
+    {
+      period: [ '2021-02-01', '2021-09-01' ],
+      entity: 'Dohop',
+      project_company: '',
+      project: 'Travelling search engine',
+      roles: [ 'Backend' ],
+      description:
+        'Creating webservices and improving existing code to comunicate with different clients. Usage of agile and testing methodologies to keep code quality high.',
+      accomplished: '',
+      skills: [ 'Agile', 'Python', 'Ubuntu', 'Git', 'Virtualbox' ]
+    },
     {
       period: [ '2019-10-01', '2020-05-01' ],
       entity: 'Affinity',
