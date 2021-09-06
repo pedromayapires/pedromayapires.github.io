@@ -52,7 +52,7 @@ var DATA = {
       project: 'Travelling search engine',
       roles: [ 'Backend' ],
       description:
-        'Creating webservices and improving existing code to comunicate with different clients. Usage of agile and testing methodologies to keep code quality high.',
+        'Creating webservices and improving existing code to communicate with different clients. Usage of agile and testing methodologies to keep code quality high.',
       accomplished: '',
       skills: [ 'Agile', 'Python', 'Ubuntu', 'Git', 'Virtualbox' ]
     },
