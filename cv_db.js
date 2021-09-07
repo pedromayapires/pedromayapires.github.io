@@ -104,7 +104,7 @@ var DATA = {
       entity: 'Affinity',
       project_company: 'Probely',
       project: 'Security software',
-      roles: [ 'Backend', 'Frontend' ],
+      roles: [ 'Backend', 'Frontend', 'Team leader' ],
       description:
         'Created a web application using Django and React that would allow a user to introduce sites to be tested by an external security API. Data was stored using a database in PostgreSql, Git was used for code safe keeping, Agile for task managing, Docker for code deployement and an Ubuntu virtual machine for code development.',
       accomplished:
