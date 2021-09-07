@@ -54,7 +54,7 @@ var DATA = {
       description:
         'Creating webservices and improving existing code to communicate with different clients. Usage of agile and testing methodologies to keep code quality high.',
       accomplished: '',
-      skills: [ 'Agile', 'Python', 'Ubuntu', 'Git', 'Virtualbox' ]
+      skills: [ 'Agile', 'Python', 'Ubuntu', 'Git', 'Virtualbox', 'Rest' ]
     },
     {
       period: [ '2019-10-01', '2020-05-01' ],
@@ -75,7 +75,8 @@ var DATA = {
         'Git',
         'PostgreSql',
         'Virtualbox',
-        'MySql'
+        'MySql',
+        'Rest'
       ]
     },
     {
@@ -95,7 +96,8 @@ var DATA = {
         'Ubuntu',
         'AngularJs',
         'Javascript',
-        'Virtualbox'
+        'Virtualbox',
+        'Rest'
       ]
     },
     {
@@ -117,7 +119,8 @@ var DATA = {
         'Git',
         'PostgreSql',
         'Virtualbox',
-        'Docker'
+        'Docker',
+        'Rest'
       ]
     },
     {
@@ -138,7 +141,8 @@ var DATA = {
         'Git',
         'AWS',
         'Virtualbox',
-        'PostgreSql'
+        'PostgreSql',
+        'Rest'
       ]
     },
     {
@@ -160,7 +164,8 @@ var DATA = {
         'Git lab',
         'Supervisord',
         'Virtualbox',
-        'Ubuntu'
+        'Ubuntu',
+        'Rest'
       ]
     },
     {
@@ -197,7 +202,7 @@ var DATA = {
         'Development and maintenance of existing Python scripts for invoicing and other purposes, database, in MySql, structural optimization and network bandwidth application testing from NodeJs and PHP solutions.',
       accomplished:
         'Development and maintenance of existing Python scripts, database structural optimization and network bandwidth testing.',
-      skills: [ 'Python', 'MySql', 'NodeJs', 'PHP' ]
+      skills: [ 'Python', 'MySql', 'NodeJs', 'PHP', 'Rest' ]
     },
     {
       period: [ '2016-06-01', '2017-08-31' ],
@@ -220,7 +225,8 @@ var DATA = {
         'Javascript',
         'PHP',
         'Virtualbox',
-        'Ubuntu'
+        'Ubuntu',
+        'Rest'
       ]
     },
     {
@@ -244,7 +250,8 @@ var DATA = {
         'Git',
         'Ldap',
         'Virtualbox',
-        'Ubuntu'
+        'Ubuntu',
+        'Rest'
       ]
     },
     {
@@ -268,7 +275,8 @@ var DATA = {
         'Git',
         'Ldap',
         'Virtualbox',
-        'Ubuntu'
+        'Ubuntu',
+        'Rest'
       ]
     },
     {
@@ -316,7 +324,8 @@ var DATA = {
         'CSS',
         'Git',
         'Virtualbox',
-        'Ubuntu'
+        'Ubuntu',
+        'Rest'
       ]
     },
     {
@@ -338,7 +347,8 @@ var DATA = {
         'JSF',
         'Hibernate',
         'Personal ID software',
-        'Subversion'
+        'Subversion',
+        'Rest'
       ]
     },
     {
