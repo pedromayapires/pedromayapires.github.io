@@ -56,7 +56,7 @@ const Roles = (props) => {
     'div',
     null,
     // e('h3', null, 'Top ' + roleElementArray.length + ' Roles (in years)'),
-    e('div', { className: 'leftCategories' }, 'Roles learned (in years)'),
+    e('div', { className: 'leftCategories' }, 'Roles measured in years'),
     e('div', { id: 'roles' }, roleElementArray)
   );
 };

@@ -58,7 +58,7 @@ const Skills = (props) => {
     'div',
     null,
     // e('h3', null, 'Top ' + skillElementArray.length + ' Skills (in years)'),
-    e('div', { className: 'leftCategories' }, 'Skills learned (in years)'),
+    e('div', { className: 'leftCategories' }, 'Skills measured in years'),
     e('div', { id: 'skills' }, skillElementArray)
   );
 };
