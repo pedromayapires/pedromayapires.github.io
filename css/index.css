@@ -6,14 +6,14 @@ p {
 h3 {
   margin: 15px;
   text-align: center;
-  color: #1b5e20;
+  color: #1a7fb6;
 }
 
 h2,
 #photoContainer {
   margin: 10px 0 10px 0;
   text-align: center;
-  color: #1b5e20;
+  color: #1a7fb6;
 }
 
 h4 {
@@ -36,7 +36,7 @@ h4 {
 }
 
 .skillsUsed {
-  color: #1b5e20;
+  color: #1a7fb6;
 }
 
 .skillElement,
@@ -67,7 +67,7 @@ h4 {
   padding: 0px 5px 5px 5px;
   width: 200px;
   border-radius: 10px;
-  background-color: #c8e6c9;
+  background-color: #cae8f8;
 }
 .settingsElement {
   margin: 5px;
@@ -98,7 +98,7 @@ h4 {
 }
 
 .projectPeriodRoles {
-  color: #1b5e20;
+  color: #1a7fb6;
 }
 
 .projectTechnologies {
@@ -124,7 +124,7 @@ h4 {
 }
 
 #name {
-  color: #1b5e20;
+  color: #1a7fb6;
 }
 
 #intro {
@@ -132,7 +132,7 @@ h4 {
 }
 
 #mainContainer {
-  border: 1px solid olivedrab;
+  border: 1px solid #1a7fb6;
   width: 850px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11pt;
@@ -143,9 +143,9 @@ h4 {
 #leftContainer {
   width: 27%;
   font-size: 9pt;
-  border-right: 1px solid olivedrab;
+  border-right: 1px solid #1a7fb6;
   z-index: 9999;
-  background-color: #c8e6c9;
+  background-color: #cae8f8;
 }
 
 #rightContainer {
@@ -175,7 +175,7 @@ h4 {
   text-align: center;
   height: 100px;
   background-size: cover;
-  border: 1px solid olivedrab;
+  border: 1px solid #1a7fb6;
   /* border-radius: 25% 25% 25% 25%; */
   border-radius: 10px;
 }
@@ -188,7 +188,7 @@ h4 {
 /* Notification data */
 .fadeOut {
   opacity: 1;
-  background-color: #c8e6c9;
+  background-color: #cae8f8;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 5px;
