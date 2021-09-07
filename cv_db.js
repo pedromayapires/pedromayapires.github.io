@@ -3,7 +3,6 @@ var DATA = {
     name: 'Pedro Viana Maya de Oliveira Pires',
     intro:
       'Fullstack Python developer with focus on the Backend and some experience as Project Manager',
-    phone_number: '+35191435887',
     location: 'Oeiras, Portugal',
     email: 'pedromayapires@gmail.com',
     skype: 'pedromayapires',
