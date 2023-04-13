@@ -45,6 +45,27 @@ var DATA = {
   },
   projects: [
     {
+      period: [ '2022-07-18' ],
+      entity: 'Ausy',
+      project_company: '',
+      project: 'Microservices',
+      roles: [ 'Backend', 'Senior Dev' ],
+      description:
+        'Creating microservices and adding features to existing microservices with FastApi. Using unit tests and Postman scripts to check for code integrity.',
+      accomplished: '',
+      skills: [
+        'Agile',
+        'Python',
+        'Ubuntu',
+        'Git',
+        'Virtualbox',
+        'Rest',
+        'Dapr',
+        'FastApi',
+        'MySql'
+      ]
+    },
+    {
       period: [ '2021-02-01', '2021-09-01' ],
       entity: 'Dohop',
       project_company: '',
@@ -60,7 +81,7 @@ var DATA = {
       entity: 'Affinity',
       project_company: 'Dohop',
       project: 'Travelling search engine',
-      roles: [ 'Backend', 'Team leader' ],
+      roles: [ 'Backend', 'Team leader', 'Senior Dev' ],
       description:
         'Managing a team using Agile methodologies and creating the backend with Django and database in PostgreSql for a new software tool to gather flight and customer information from different sources that had information in MySql or were obtained using API requests and manage that information. Docker was used for code deployement, Git for safe keeping the code and Ubuntu in a development virtual machine.',
       accomplished:
@@ -104,7 +125,7 @@ var DATA = {
       entity: 'Affinity',
       project_company: 'Probely',
       project: 'Security software',
-      roles: [ 'Backend', 'Frontend', 'Team leader' ],
+      roles: [ 'Backend', 'Frontend', 'Team leader', 'Senior Dev' ],
       description:
         'Created a web application using Django and React that would allow a user to introduce sites to be tested by an external security API. Data was stored using a database in PostgreSql, Git was used for code safe keeping, Agile for task managing, Docker for code deployement and an Ubuntu virtual machine for code development.',
       accomplished:
@@ -172,7 +193,7 @@ var DATA = {
       entity: 'Babel',
       project_company: 'Agência de Modernização administrativa',
       project: 'Data collector',
-      roles: [ 'Backend', 'Project manager', 'Team leader' ],
+      roles: [ 'Backend', 'Project manager', 'Team leader', 'Senior Dev' ],
       description:
         'Managing a team and project while creating a web application based on open data tool uData to collect and display information from different entities using Rest and Python data harvesters in a specific format. uData uses Python as a language, MongoDB to store data, Flask as a framework and ElasticSearch and Redis for notifications and data search. CentOs was required by the companies system administrators and Ubuntu was used in the development virtual machines. Agile was used to manage tasks.',
       accomplished:
