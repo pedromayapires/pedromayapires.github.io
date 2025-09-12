@@ -5,18 +5,6 @@ import Store from './utils/store.js';
 
 const e = React.createElement;
 const jsonData = DATA;
-// const { useState } = React;
-// const [state, setState] = useState(initialState);
-
-// ReactDOM.render(
-//   [
-//     e(Settings),
-//     // e(MainCV, { jsonData: jsonData, stateTestInt: stateTestInt }),
-//     e(MainCV, { jsonData: jsonData }),
-//     e('div', { id: 'notifications' })
-//   ],
-//   document.getElementById('root')
-// );
 
 ReactDOM.render(
   [

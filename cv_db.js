@@ -3,11 +3,11 @@ var DATA = {
     name: 'Pedro Viana Maya de Oliveira Pires',
     intro:
       'Backend Python developer with experience in Frontend, DevOps and Project Manager',
-    location: 'Portugal',
+    location: 'Portugal, Azores',
     email: 'pedromayapires@gmail.com',
     skype: 'pedromayapires',
     linkedin: 'www.linkedin.com/in/pedromayapires',
-    github: 'https://pedromayapires.github.io/'
+    github: 'pedromayapires.github.io/'
   },
   courses: [
     {

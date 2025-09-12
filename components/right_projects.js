@@ -11,7 +11,7 @@ const Projects = (props) => {
         ...props.projects[i]
       })
     );
-    if (i == 5 || i == 11) {
+    if (i == 6 || i == 12) {
       projectArray.push(
         e('div', { key: 'pageBreakAt' + i, className: 'pageBreak' })
       );
