@@ -13,25 +13,25 @@ const Contacts = (props) => {
       value: props.location
     }),
     // e(ContactElement, {
-    //   type: 'Mobile',
-    //   value: props.phone_number
-    // }),
-    // e(ContactElement, {
     //   type: 'Skype',
     //   value: props.skype
     // }),
     // e(ContactURL, {
     e(ContactElement, {
       type: 'Linkedin',
-      href: 'https://www.linkedin.com/in/'+ props.skype,
-      value: 'in/' + props.skype
+      href: 'https://www.linkedin.com/in/'+ props.id,
+      value: 'in/' + props.id
       // value: props.skype
     }),
-    // e(ContactURL, {
+    e(ContactElement, {
+      type: 'GitPage',
+      href: 'https://'+ props.id + props.github,
+      value: props.id + props.github
+    }),
     e(ContactElement, {
       type: 'Email',
-      href: 'mailto:' + props.email,
-      value: props.email
+      href: 'mailto:' + props.id + props.email,
+      value: props.id + props.email
     })
   );
 };

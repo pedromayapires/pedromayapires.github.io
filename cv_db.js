@@ -2,26 +2,26 @@ var DATA = {
   personal_info: {
     name: 'Pedro Viana Maya de Oliveira Pires',
     intro:
-      'Backend Python developer with experience in Frontend, DevOps and Project Manager',
+      'Backend Python developer with knowledge in Frontend, DevOps and Project Manager',
     location: 'Portugal, Azores',
-    email: 'pedromayapires@gmail.com',
-    skype: 'pedromayapires',
-    linkedin: 'www.linkedin.com/in/pedromayapires',
-    github: 'pedromayapires.github.io/'
+    id: 'pedromayapires',
+    email: '@gmail.com',
+    linkedin: 'www.linkedin.com/in/',
+    github: '.github.io'
   },
-  courses: [
+  degrees: [
     {
       name: 'Computer engineering',
-      period: [ '2004-09-15', '2010-09-15' ],
+      // period: [ '2004-09-15', '2010-09-15' ],
       location:
         'Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa'
     },
-    {
-      name: 'Mathematics',
-      period: [ '2003-09-15', '2004-07-15' ],
-      location:
-        'Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa'
-    }
+    // {
+    //   name: 'Mathematics',
+    //   period: [ '2003-09-15', '2004-07-15' ],
+    //   location:
+    //     'Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa'
+    // }
   ],
   languages: [
     {
@@ -71,7 +71,6 @@ var DATA = {
       roles: [ 'Backend', 'DevOps' ],
       description:
         'Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker',
-      accomplished: '',
       skills: [
         'Agile',
         'Python',
@@ -92,7 +91,6 @@ var DATA = {
       roles: [ 'Backend' ],
       description:
         'Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker',
-      accomplished: '',
       skills: [
         'Agile',
         'Python',
@@ -112,7 +110,6 @@ var DATA = {
       roles: [ 'Backend' ],
       description:
         'Creating a test microservice using the help of Co-Pilot to check the usefulness and efficiency of the tool.',
-      accomplished: '',
       skills: [
         'Agile',
         'Python',
@@ -132,7 +129,6 @@ var DATA = {
       roles: [ 'Backend' ],
       description:
         'Creating microservices and adding features to existing microservices with FastAPI. Using unit tests and Postman scripts to check for code integrity.',
-      accomplished: '',
       skills: [
         'Agile',
         'Python',
@@ -155,7 +151,6 @@ var DATA = {
       roles: [ 'Backend' ],
       description:
         'Creating webservices and improving existing code to communicate with different clients. Usage of agile and testing methodologies to keep code quality high.',
-      accomplished: '',
       skills: [ 'Agile', 'Python', 'Ubuntu', 'Git', 'Virtualbox', 'Rest' ]
     },
     {
@@ -165,8 +160,6 @@ var DATA = {
       project: 'Travelling search engine',
       roles: [ 'Backend', 'Team leader' ],
       description:
-        'Managing a team using Agile methodologies and creating the backend with Django and database in PostgreSql for a new software tool to gather flight and customer information from different sources that had information in MySql or were obtained using API requests and manage that information. Docker was used for code deployement, Git for safe keeping the code and Ubuntu in a development virtual machine.',
-      accomplished:
         'Managing a team and creating the backend and database structure for a new software tool to gather flight and customer information and manage that information.',
       skills: [
         'Agile',
@@ -189,8 +182,6 @@ var DATA = {
       project: 'Food supplements',
       roles: [ 'Backend', 'Frontend' ],
       description:
-        'Adding and changing Google lambda functions in the backend using Google functions in Python and creating a frontend with AngularJS to allow better data management and better user interface for the products. Tasks were organized using Agile and development was done using virtual machines with Ubuntu.',
-      accomplished:
         'Creating and changing Google lambda functions in the backend and creating a frontend to allow better data management and better user interface for the products.',
       skills: [
         'Agile',
@@ -210,8 +201,6 @@ var DATA = {
       project: 'Security software',
       roles: [ 'Backend', 'Frontend', 'Team leader' ],
       description:
-        'Created a web application using Django and React that would allow a user to introduce sites to be tested by an external security API. Data was stored using a database in PostgreSql, Git was used for code safe keeping, Agile for task managing, Docker for code deployement and an Ubuntu virtual machine for code development.',
-      accomplished:
         'Created a web application that would allow a user to introduce sites to be tested by an external security API.',
       skills: [
         'Agile',
@@ -233,8 +222,6 @@ var DATA = {
       project: 'Retail branding and sourcing services',
       roles: [ 'Backend', 'Project manager' ],
       description:
-        'Added and optimize existing Django code, fixed existing issues in the PostgreSql database migrations and helped with new procedures to prevent issues again, did interviews to future team members and had some use of AWS servers for deployments and during development. Development was done in a Ubuntu virtual machine and code was backed up in Git.',
-      accomplished:
         'Add and optimize existing code, add and optimize work procedures and do interviews to aquire future team members.',
       skills: [
         'Agile',
@@ -256,8 +243,6 @@ var DATA = {
       project: 'Product assortment optimization software for retailers',
       roles: [ 'Backend', 'DevOps' ],
       description:
-        'Configuring Supervisord containing servers in CentOS to assure optimal response time, optimizing, adding and fixing existing features in Flask Restful code, configuring and installing existing server management software in different servers, managing server procedures using Ansible. Used Git lab for code storing and Ubuntu virtual machines for development.',
-      accomplished:
         'Configuring servers, optimizing code, optimizing procedures, configuring and installing the software in different servers, adding and fixing existing features.',
       skills: [
         'Agile',
@@ -280,8 +265,6 @@ var DATA = {
       project: 'Data collector',
       roles: [ 'Backend', 'Project manager', 'Team leader' ],
       description:
-        'Managing a team and project while creating a web application based on open data tool uData to collect and display information from different entities using Rest and Python data harvesters in a specific format. uData uses Python as a language, MongoDB to store data, Flask as a framework and ElasticSearch and Redis for notifications and data search. CentOs was required by the companies system administrators and Ubuntu was used in the development virtual machines. Agile was used to manage tasks.',
-      accomplished:
         'Creating a web application based on open data tool uData to collect and display information from different entities in a specific format.',
       skills: [
         'Agile',
@@ -305,8 +288,6 @@ var DATA = {
       project: 'Python script maintenance and application testing',
       roles: [ 'Backend' ],
       description:
-        'Development and maintenance of existing Python scripts for invoicing and other purposes, database, in MySql, structural optimization and network bandwidth application testing from NodeJs and PHP solutions.',
-      accomplished:
         'Development and maintenance of existing Python scripts, database structural optimization and network bandwidth testing.',
       skills: [ 'Python', 'MySql', 'NodeJs', 'PHP', 'Rest' ]
     },
@@ -317,8 +298,6 @@ var DATA = {
       project: 'Marketing & Call center',
       roles: [ 'Backend', 'Frontend' ],
       description:
-        'I created a backoffice in NodeJs and Express using PostgreSql for the database and AngularJs for the frontend, adding pages and features as needed. Created and maintained existing landing pages done in NodeJs, Express and AngularJs, PostgreSql database maintenance, minor helpdesk and system administration PHP scripts maintenance. Ubuntu was used for the development virtual machine.',
-      accomplished:
         'Development, updating / maintaining backoffice pages, creating and maintaining existing landing pages, database maintenance, minor helpdesk and system administration tasks.',
       skills: [
         'NodeJs',
@@ -342,8 +321,6 @@ var DATA = {
       project: 'Science: research and teaching',
       roles: [ 'Backend', 'Frontend', 'Project manager' ],
       description:
-        'Data import from existing sources like excel, MySql and Ldap, I created a tool, in Django and Jquery for the frontend, to edit, remove and add human resources information later to be stored in a different MySql database. Code was stored in Git, user authentication was done through Django and Ldap, Ubuntu was used for the development virtual machine and all the code and database structure was created from the ground up.',
-      accomplished:
         'Data import from existing sources, created a tool, in Django, to edit, remove and add human resources information later to be stored in a MySql database.',
       skills: [
         'Python',
@@ -367,8 +344,6 @@ var DATA = {
       project: 'Science: research and teaching',
       roles: [ 'Backend', 'Frontend', 'Project manager' ],
       description:
-        'Resource managing tool created by me made in Django that allowed adding, changing and removing booking entries for specific laboratory resources using a MySql database while managing and importing users from Ldap later stored in the database. Jquery was used on the frontend, all the code and database structure was created from the ground up, git was used to stored the code and Ubuntu was used in the development virtual machine.',
-      accomplished:
         'User management and access by webpage and Ldap. Resource managing tool made in Django that allowed adding, changing and removing booking entries for specific resources while managing and importing users from Ldap. Entry reports where done with associated costs.',
       skills: [
         'Python',
@@ -392,8 +367,6 @@ var DATA = {
       project: 'Science: research and teaching',
       roles: [ 'Backend', 'Frontend', 'Project manager' ],
       description:
-        'Document management application created by me for the accounting and administrative units done by using Django on the backend, Jquery for the frontend and MySql to store the data. The application was created from scratch after getting the requirements from the end users and managers, it was necessary to import data from the previous applications using Ldap and MySql data. The application had Rest and Soap services to get information from outside sources. Code was stored using Git and development was done in a Ubuntu virtual machine.',
-      accomplished:
         'Document management application for the accounting and administrative units. Each document type contains different metadata with error checking/specific formating. Document search by type, metadata and comments. Stamp printing and data import from webservices. This was an application done with Django, that also allowed managing users.',
       skills: [
         'Python',
@@ -417,8 +390,6 @@ var DATA = {
       project: 'Science: research and teaching',
       roles: [ 'Backend', 'Frontend' ],
       description:
-        'Added and improved features on a scientific resource management application done in PHP, Jquery on the frontend and MySql to store data. The application allowed the creation of reports and invoices, as well as user management. Development was done in a Ubuntu virtual machine and code was stored in Git.',
-      accomplished:
         'Resource managing by adding, changing and removing entries. Entry report with associated costs, user and respective access management.',
       skills: [
         'PHP',
@@ -439,10 +410,8 @@ var DATA = {
       entity: 'PT-SI',
       project_company: '',
       project: 'Information systems and technology, Academic intership',
-      roles: [ 'Intern', 'Backend', 'Frontend' ],
+      roles: [ 'Backend', 'Frontend' ],
       description:
-        'Alfresco application analysis, feature testing, planning and implementing. Alfresco was a tool with Java on the backend, JSF for the frontend and Hibernate to handle databases. Personal ID software was used to sign documents.',
-      accomplished:
         'Alfresco application analysis, feature testing, planning and implementing.',
       skills: [
         'Javascript',
@@ -462,7 +431,7 @@ var DATA = {
       entity: 'PT-SI',
       project_company: '',
       project: 'Information systems and technology, Academic intership',
-      roles: [ 'Intern', 'Backend', 'Frontend' ],
+      roles: [ 'Backend', 'Frontend' ],
       description:
         'KnowledgeTree application analysis, feature testing, planning and implementing. KnowledgeTree was a toold with PHP on the backend and regular Javascript for the frontend.',
       skills: [ 'PHP', 'Javascript', 'Html', 'CSS' ]

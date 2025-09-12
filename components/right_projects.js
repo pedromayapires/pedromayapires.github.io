@@ -11,11 +11,6 @@ const Projects = (props) => {
         ...props.projects[i]
       })
     );
-    if (i == 6 || i == 12) {
-      projectArray.push(
-        e('div', { key: 'pageBreakAt' + i, className: 'pageBreak' })
-      );
-    }
   }
 
   let lastDate = props.projects[0].period[1]

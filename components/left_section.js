@@ -2,7 +2,7 @@ import Contacts from './left_contacts.js';
 import Roles from './left_roles.js';
 import Skills from './left_skills.js';
 import Languages from './left_languages.js';
-import Courses from './left_courses.js';
+import Degrees from './left_degrees.js';
 const e = React.createElement;
 
 const LeftSection = (props) => {
@@ -18,7 +18,7 @@ const LeftSection = (props) => {
     e(Roles, props),
     e(Skills, props),
     e(Languages, props),
-    e(Courses, props)
+    e(Degrees, props)
   );
 };
 

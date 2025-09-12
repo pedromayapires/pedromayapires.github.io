@@ -39,10 +39,6 @@ const ProjectElement = (props) => {
     );
   };
 
-  let bla = document.getElementsByName('dateFormats');
-  bla.onChange = (e) => {
-    console.log(periodString);
-  };
 
   return e(
     'div',
@@ -56,7 +52,6 @@ const ProjectElement = (props) => {
       e('div', { className: 'copyValueToClip' }, props.project)
     ),
     e('div', { className: 'copyValueToClip' }, props.description),
-    // e('p', null, props.accomplished),
     e(
       'p',
       { className: 'projectTechnologies' },
