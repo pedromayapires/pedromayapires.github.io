@@ -5,7 +5,7 @@ const RightHeader = (props) => {
     'div',
     { id: 'rightHeader' },
     e('div', { id: 'name', className: 'copyValueToClip' }, props.name),
-    e('div', { id: 'intro', className: 'copyValueToClip' }, props.intro)
+    // e('div', { id: 'intro', className: 'copyValueToClip' }, props.intro)
   );
 };
 

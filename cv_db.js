@@ -2,11 +2,12 @@ var DATA = {
   personal_info: {
     name: 'Pedro Viana Maya de Oliveira Pires',
     intro:
-      'Fullstack Python developer with focus on the Backend and some experience as Project Manager',
-    location: 'Oeiras, Portugal',
+      'Backend Python developer with experience in Frontend, DevOps and Project Manager',
+    location: 'Portugal',
     email: 'pedromayapires@gmail.com',
     skype: 'pedromayapires',
-    linkedin: 'www.linkedin.com/in/pedromayapires'
+    linkedin: 'www.linkedin.com/in/pedromayapires',
+    github: 'https://pedromayapires.github.io/'
   },
   courses: [
     {
@@ -37,21 +38,100 @@ var DATA = {
     }
   ],
   skills_to_ignore: {
-    // 'Personal ID software': true
-    // Java: true,
-    // Spring: true,
-    // JSF: true,
-    // Hibernate: true
+    'Personal ID software': true,
+    'Rest': true,
+    'Git': true,
+    'Agile': true,
+    'CSS': true,
+    'Soap': true,
+    'Html': true,
+    'Java': true,
+    'Spring': true,
+    'JSF': true,
+    'Ubuntu': true,
+    'Hibernate': true,
+    'Express': true,
+    'CentOS': true,
+    'Subversion': true,
+    'PHP': true,
+    'Mercurial': true,
+    'Jquery': true,
+    'Google functions': true,
+    'Git lab': true,
+    'Supervisord': true,
+    'Co-Pilot': true,
+    'Virtualbox': true
   },
   projects: [
     {
-      period: [ '2022-07-18' ],
+      period: [ '2025-05-12', '2025-09-01' ],
+      entity: 'Abelhas Intemporais',
+      project_company: '',
+      project: 'ScalaBit',
+      roles: [ 'Backend', 'DevOps' ],
+      description:
+        'Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker',
+      accomplished: '',
+      skills: [
+        'Agile',
+        'Python',
+        'Git',
+        'GitHub Actions',
+        'GitHub Workflows',
+        'Rest',
+        'FastAPI',
+        'PyTest',
+        'Docker'
+      ]
+    },
+    {
+      period: [ '2024-09-16', '2025, 02, 01' ],
+      entity: 'Abelhas Intemporais',
+      project_company: '',
+      project: 'KCS-IT',
+      roles: [ 'Backend' ],
+      description:
+        'Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker',
+      accomplished: '',
+      skills: [
+        'Agile',
+        'Python',
+        'Ubuntu',
+        'Git',
+        'Rest',
+        'FastAPI',
+        'PyTest',
+        'Docker'
+      ]
+    },
+    {
+      period: [ '2024-04-01', '2024-07-15' ],
+      entity: 'Ausy',
+      project_company: '',
+      project: 'A.I.',
+      roles: [ 'Backend' ],
+      description:
+        'Creating a test microservice using the help of Co-Pilot to check the usefulness and efficiency of the tool.',
+      accomplished: '',
+      skills: [
+        'Agile',
+        'Python',
+        'Ubuntu',
+        'Git',
+        'Virtualbox',
+        'Co-Pilot',
+        'PyTest',
+        'Rest'
+      ]
+    },
+    {
+      period: [ '2022-07-18', '2024-04-01' ],
       entity: 'Ausy',
       project_company: '',
       project: 'Microservices',
-      roles: [ 'Backend', 'Senior Dev' ],
+      roles: [ 'Backend' ],
       description:
-        'Creating microservices and adding features to existing microservices with FastApi. Using unit tests and Postman scripts to check for code integrity.',
+        'Creating microservices and adding features to existing microservices with FastAPI. Using unit tests and Postman scripts to check for code integrity.',
       accomplished: '',
       skills: [
         'Agile',
@@ -61,7 +141,9 @@ var DATA = {
         'Virtualbox',
         'Rest',
         'Dapr',
-        'FastApi',
+        'Docker',
+        'FastAPI',
+        'PyTest',
         'MySql'
       ]
     },
@@ -81,7 +163,7 @@ var DATA = {
       entity: 'Affinity',
       project_company: 'Dohop',
       project: 'Travelling search engine',
-      roles: [ 'Backend', 'Team leader', 'Senior Dev' ],
+      roles: [ 'Backend', 'Team leader' ],
       description:
         'Managing a team using Agile methodologies and creating the backend with Django and database in PostgreSql for a new software tool to gather flight and customer information from different sources that had information in MySql or were obtained using API requests and manage that information. Docker was used for code deployement, Git for safe keeping the code and Ubuntu in a development virtual machine.',
       accomplished:
@@ -96,6 +178,7 @@ var DATA = {
         'PostgreSql',
         'Virtualbox',
         'MySql',
+        'React',
         'Rest'
       ]
     },
@@ -106,13 +189,13 @@ var DATA = {
       project: 'Food supplements',
       roles: [ 'Backend', 'Frontend' ],
       description:
-        'Adding and changing functions in the backend using Google functions in Python and creating a frontend with AngularJS to allow better data management and better user interface for the products. Tasks were organized using Agile and development was done using virtual machines with Ubuntu.',
+        'Adding and changing Google lambda functions in the backend using Google functions in Python and creating a frontend with AngularJS to allow better data management and better user interface for the products. Tasks were organized using Agile and development was done using virtual machines with Ubuntu.',
       accomplished:
-        'Creating and changing methods in the backend and creating a frontend to allow better data management and better user interface for the products.',
+        'Creating and changing Google lambda functions in the backend and creating a frontend to allow better data management and better user interface for the products.',
       skills: [
         'Agile',
         'Python',
-        'Google functions',
+        'Google lambda',
         'Ubuntu',
         'AngularJs',
         'Javascript',
@@ -125,7 +208,7 @@ var DATA = {
       entity: 'Affinity',
       project_company: 'Probely',
       project: 'Security software',
-      roles: [ 'Backend', 'Frontend', 'Team leader', 'Senior Dev' ],
+      roles: [ 'Backend', 'Frontend', 'Team leader' ],
       description:
         'Created a web application using Django and React that would allow a user to introduce sites to be tested by an external security API. Data was stored using a database in PostgreSql, Git was used for code safe keeping, Agile for task managing, Docker for code deployement and an Ubuntu virtual machine for code development.',
       accomplished:
@@ -162,6 +245,7 @@ var DATA = {
         'AWS',
         'Virtualbox',
         'PostgreSql',
+        'AWS',
         'Rest'
       ]
     },
@@ -178,13 +262,14 @@ var DATA = {
       skills: [
         'Agile',
         'Python',
-        'Flask Restful',
+        'Flask',
         'Ansible',
         'CentOS',
         'Git lab',
         'Supervisord',
         'Virtualbox',
         'Ubuntu',
+        'AWS',
         'Rest'
       ]
     },
@@ -193,7 +278,7 @@ var DATA = {
       entity: 'Babel',
       project_company: 'Agência de Modernização administrativa',
       project: 'Data collector',
-      roles: [ 'Backend', 'Project manager', 'Team leader', 'Senior Dev' ],
+      roles: [ 'Backend', 'Project manager', 'Team leader' ],
       description:
         'Managing a team and project while creating a web application based on open data tool uData to collect and display information from different entities using Rest and Python data harvesters in a specific format. uData uses Python as a language, MongoDB to store data, Flask as a framework and ElasticSearch and Redis for notifications and data search. CentOs was required by the companies system administrators and Ubuntu was used in the development virtual machines. Agile was used to manage tasks.',
       accomplished:
@@ -209,6 +294,7 @@ var DATA = {
         'Git',
         'Ubuntu',
         'Virtualbox',
+        'Azure',
         'Rest'
       ]
     },

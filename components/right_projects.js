@@ -11,7 +11,7 @@ const Projects = (props) => {
         ...props.projects[i]
       })
     );
-    if (i == 5 || i == 12) {
+    if (i == 5 || i == 11) {
       projectArray.push(
         e('div', { key: 'pageBreakAt' + i, className: 'pageBreak' })
       );
@@ -34,7 +34,8 @@ const Projects = (props) => {
       'div',
       { id: 'projectsHeader' },
       // experienceInYears.toFixed(2) + ' years of work experience'
-      'Over ' + Math.floor(experienceInYears) + ' years of work experience'
+      // 'Over ' + Math.floor(experienceInYears) + ' years of work experience'
+      props.personal_info.intro + ' with over ' + Math.floor(experienceInYears) + ' years of work experience'
     ),
     projectArray
   );

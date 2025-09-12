@@ -69,6 +69,7 @@ h4 {
   border-radius: 10px;
   background-color: #cae8f8;
 }
+
 .settingsElement {
   margin: 5px;
 }
@@ -88,7 +89,8 @@ h4 {
 }
 
 .projectElement {
-  margin-top: 25px;
+  /* margin-top: 25px; */
+  padding-top: 25px;
 }
 
 .projectPeriodRoles,
@@ -120,7 +122,7 @@ h4 {
 
 #name,
 #projectsHeader {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #name {
@@ -141,15 +143,19 @@ h4 {
 }
 
 #leftContainer {
-  width: 27%;
   font-size: 9pt;
-  border-right: 1px solid #1a7fb6;
+  /* border-right: 1px solid #1a7fb6; */
   z-index: 9999;
+  margin: 0px;
   background-color: #cae8f8;
+  /* bottom: 0px; */
+  width: 28%;
+  /* width: 300px; */
 }
 
 #rightContainer {
-  width: 73%;
+  width: 75%;
+  /* width: 1900px; */
 }
 
 #rightHeader {
@@ -165,6 +171,7 @@ h4 {
 #rightContainer {
   margin: 0 5px 0 5px;
 }
+
 #photoContainer {
   display: flex;
   justify-content: center;
@@ -209,37 +216,54 @@ h4 {
     opacity: 1;
     /* display: none; */
   }
+
   70% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 @-webkit-keyframes cssAnimation {
   0% {
     opacity: 1;
     /* display: none; */
   }
+
   70% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 /* ********************************* */
 
 @media print {
+  body {
+    height: 100%;
+    background: linear-gradient(90deg, #cae8f8 28%, #ffFFFF 0);
+  }
+
   #mainContainer {
     border: none;
     padding: 0px;
     margin: 0px;
   }
 
+  #leftContainer {
+    /* padding: 0; */
+    padding-bottom: 15px;
+    /* height: 100%; */
+  }
+
   .pageBreak {
     page-break-after: always;
-    /* margin-bottom: 50px; */
+    height: 1px;
   }
 
   .hideOnPrint {

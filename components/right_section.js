@@ -8,7 +8,8 @@ const RightSection = (props) => {
     'div',
     null,
     e(RightHeader, props.personal_info),
-    e(Projects, { projects: props.projects })
+    // e(Projects, { projects: props.projects })
+    e(Projects, props)
   );
 };
 
