@@ -33,6 +33,7 @@ const Projects = (props) => {
     e(
       'div',
       { id: 'projectsHeader' },
+      // TODO: Change this to have months if below a year and maybe ceil it if above?
       // experienceInYears.toFixed(2) + ' years of work experience'
       // 'Over ' + Math.floor(experienceInYears) + ' years of work experience'
       props.personal_info.intro + ' with over ' + Math.floor(experienceInYears) + ' years of work experience'
