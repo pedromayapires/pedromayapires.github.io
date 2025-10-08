@@ -4,8 +4,6 @@ import DATA from "./cv_db.js";
 import Store from "./utils/store.js";
 import updateSkillsAndRoles from "./utils/aux_methods.js";
 
-// import { GlobalProvider } from "./_crap/test_context_provider";
-
 const e = React.createElement;
 const jsonData = updateSkillsAndRoles(DATA);
 

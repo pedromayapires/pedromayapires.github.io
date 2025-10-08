@@ -39,6 +39,8 @@ const ClientElement = (props) => {
 
     let periodString = fromDateString + " to " + toDateString;
     let rolesString = roles.join(", ");
+    console.log(periodString);
+
     return e(
       "p",
       { className: "clientPeriodRoles" },
@@ -69,6 +71,7 @@ const ClientElement = (props) => {
     );
   };
 
+  // console.log(props.projects);
   return e(
     "div",
     { className: "clientElement" },
@@ -76,7 +79,7 @@ const ClientElement = (props) => {
     e(
       "p",
       { className: "clientElementData" },
-      e("div", { className: "copyValueToClip" }, props.entity)
+      e("div", { className: "copyValueToClip" }, props.name)
     ),
     ...props.projects.map((project, index) => getProjectData(project))
   );
