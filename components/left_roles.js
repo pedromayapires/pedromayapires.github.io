@@ -8,23 +8,25 @@ const Roles = (props) => {
   let roleObj = {};
   let yearFloatPeriod = 0;
 
-  for (let i = 0; i < props.clients.length; i++) {
-    currentClient = props.clients[i];
-    fromDate = new Date(currentClient.period[0]);
-    toDate = currentClient.period[1]
-      ? new Date(currentClient.period[1])
-      : new Date();
+  // for (let i = 0; i < props.clients.length; i++) {
+  //   currentClient = props.clients[i];
+  //   fromDate = new Date(currentClient.period[0]);
+  //   toDate = currentClient.period[1]
+  //     ? new Date(currentClient.period[1])
+  //     : new Date();
 
-    yearFloatPeriod = (toDate - fromDate) / 31536000000;
+  //   yearFloatPeriod = (toDate - fromDate) / 31536000000;
 
-    for (const key in currentClient.roles) {
-      const element = currentClient.roles[key];
-      if (!(element in roleObj)) {
-        roleObj[element] = 0;
-      }
-      roleObj[element] += yearFloatPeriod;
-    }
-  }
+  //   for (const key in currentClient.roles) {
+  //     const element = currentClient.roles[key];
+  //     if (!(element in roleObj)) {
+  //       roleObj[element] = 0;
+  //     }
+  //     roleObj[element] += yearFloatPeriod;
+  //   }
+  // }
+
+  roleObj = props.role_duration;
 
   // sort
   let keysSorted = Object.keys(roleObj).sort(function (a, b) {

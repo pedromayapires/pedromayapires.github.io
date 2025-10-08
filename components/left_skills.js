@@ -7,27 +7,29 @@ const Skills = (props) => {
   let currentClient = null;
   let skillObj = {};
   let yearFloatPeriod = 0;
-  for (let i = 0; i < props.clients.length; i++) {
-    currentClient = props.clients[i];
-    fromDate = new Date(currentClient.period[0]);
-    toDate = currentClient.period[1]
-      ? new Date(currentClient.period[1])
-      : new Date();
+  // for (let i = 0; i < props.clients.length; i++) {
+  //   currentClient = props.clients[i];
+  //   fromDate = new Date(currentClient.period[0]);
+  //   toDate = currentClient.period[1]
+  //     ? new Date(currentClient.period[1])
+  //     : new Date();
 
-    yearFloatPeriod = (toDate - fromDate) / 31536000000;
+  //   yearFloatPeriod = (toDate - fromDate) / 31536000000;
 
-    for (const key in currentClient.skills) {
-      if (currentClient.skills[key] in props.skills_to_ignore) {
-        continue;
-      }
+  //   for (const key in currentClient.skills) {
+  //     if (currentClient.skills[key] in props.skills_to_ignore) {
+  //       continue;
+  //     }
 
-      const element = currentClient.skills[key];
-      if (!(element in skillObj)) {
-        skillObj[element] = 0;
-      }
-      skillObj[element] += yearFloatPeriod;
-    }
-  }
+  //     const element = currentClient.skills[key];
+  //     if (!(element in skillObj)) {
+  //       skillObj[element] = 0;
+  //     }
+  //     skillObj[element] += yearFloatPeriod;
+  //   }
+  // }
+
+  skillObj = props.skill_duration;
 
   // sort
   let keysSorted = Object.keys(skillObj).sort(function (a, b) {

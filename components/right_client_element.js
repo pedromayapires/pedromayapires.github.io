@@ -1,4 +1,4 @@
-import { Context } from "../utils/store.js";
+// import { Context } from "../utils/store.js";
 
 const e = React.createElement;
 
@@ -22,8 +22,8 @@ let auxGetDateMonthYearFormat = (dateObj) => {
 };
 
 const ClientElement = (props) => {
-  const { useEffect, useContext } = React;
-  const [state, dispatch] = useContext(Context);
+  // const { useEffect, useContext } = React;
+  // const [state, dispatch] = useContext(Context);
 
   let europeanDateFormat = null;
   let monthYearFormat = null;
@@ -49,12 +49,12 @@ const ClientElement = (props) => {
   };
 
   const getProjectData = (project) => {
-    console.log(project);
-    console.log(state);
+    // console.log(project);
+    // console.log(state);
     return e(
       e(
         "p",
-        { className: "clientEntityClient" },
+        { className: "clientElementData" },
         getPeriodRoles(project.period, project.roles),
         " | ",
         e("div", { className: "copyValueToClip" }, project.name)
@@ -75,7 +75,7 @@ const ClientElement = (props) => {
     getPeriodRoles(["2010-05-01", "2010-11-01"], []),
     e(
       "p",
-      { className: "clientEntityClient" },
+      { className: "clientElementData" },
       e("div", { className: "copyValueToClip" }, props.entity)
     ),
     ...props.projects.map((project, index) => getProjectData(project))

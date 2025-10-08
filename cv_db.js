@@ -84,7 +84,7 @@ var DATA = {
   },
   clients: [
     {
-      entity: "Abelhas Intemporais",
+      name: "Abelhas Intemporais",
       projects: [
         {
           name: "ScalaBit",
@@ -124,7 +124,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Ausy",
+      name: "Ausy",
       projects: [
         {
           name: "A.I.",
@@ -166,7 +166,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Dohop",
+      name: "Dohop",
       projects: [
         {
           name: "Travelling search engine",
@@ -179,7 +179,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Affinity",
+      name: "Affinity",
       projects: [
         {
           name: "Travelling search engine",
@@ -279,7 +279,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Babel",
+      name: "Babel",
       projects: [
         {
           name: "Data collector",
@@ -305,7 +305,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Agap2It",
+      name: "Agap2It",
       projects: [
         {
           name: "Python script maintenance and application testing",
@@ -318,7 +318,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Leads4Sales",
+      name: "Leads4Sales",
       projects: [
         {
           name: "Marketing & Call center",
@@ -344,7 +344,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Instituto de Medicina Molecular",
+      name: "Instituto de Medicina Molecular",
       projects: [
         {
           name: "H.R. Manager",
@@ -391,7 +391,7 @@ var DATA = {
       ],
     },
     {
-      entity: "Instituto Gulbenkian de ciência",
+      name: "Instituto Gulbenkian de ciência",
       projects: [
         {
           name: "Document manager",
@@ -417,7 +417,7 @@ var DATA = {
         {
           name: "Resource manager",
           period: ["2010-12-01", "2013-01-01"],
-          entity: "Instituto Gulbenkian de ciência",
+          name: "Instituto Gulbenkian de ciência",
           roles: ["Backend", "Frontend"],
           description:
             "Resource managing by adding, changing and removing entries. Entry report with associated costs, user and respective access management.",
@@ -438,7 +438,7 @@ var DATA = {
       ],
     },
     {
-      entity: "PT-SI",
+      name: "PT-SI",
       projects: [
         {
           name: "Document manager with Alfresco",

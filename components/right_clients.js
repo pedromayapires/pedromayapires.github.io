@@ -1,15 +1,19 @@
 import ClientElement from "./right_client_element.js";
+import { Context } from "../utils/store.js";
 
 const e = React.createElement;
 
 const Clients = (props) => {
+  const { useEffect, useContext } = React;
+  const [state, dispatch] = useContext(Context);
+
   let clientArray = [];
   // console.log(props.clients);
-  for (let i = 0; i < props.clients.length; i++) {
+  for (let i = 0; i < state.clients.length; i++) {
     clientArray.push(
       e(ClientElement, {
         key: "clientElement" + i,
-        ...props.clients[i],
+        ...state.clients[i],
       })
     );
   }
@@ -35,7 +39,7 @@ const Clients = (props) => {
       // TODO: Change this to have months if below a year and maybe ceil it if above?
       // experienceInYears.toFixed(2) + ' years of work experience'
       // 'Over ' + Math.floor(experienceInYears) + ' years of work experience'
-      props.personal_info.intro +
+      state.personal_info.intro +
         " with over " +
         Math.floor(experienceInYears) +
         " years of work experience"
