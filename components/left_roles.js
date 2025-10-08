@@ -1,24 +1,24 @@
-import RoleElement from './left_role_element.js';
+import RoleElement from "./left_role_element.js";
 const e = React.createElement;
 
 const Roles = (props) => {
   let fromDate = null;
   let toDate = null;
-  let currentProject = null;
+  let currentClient = null;
   let roleObj = {};
   let yearFloatPeriod = 0;
 
-  for (let i = 0; i < props.projects.length; i++) {
-    currentProject = props.projects[i];
-    fromDate = new Date(currentProject.period[0]);
-    toDate = currentProject.period[1]
-      ? new Date(currentProject.period[1])
+  for (let i = 0; i < props.clients.length; i++) {
+    currentClient = props.clients[i];
+    fromDate = new Date(currentClient.period[0]);
+    toDate = currentClient.period[1]
+      ? new Date(currentClient.period[1])
       : new Date();
 
     yearFloatPeriod = (toDate - fromDate) / 31536000000;
 
-    for (const key in currentProject.roles) {
-      const element = currentProject.roles[key];
+    for (const key in currentClient.roles) {
+      const element = currentClient.roles[key];
       if (!(element in roleObj)) {
         roleObj[element] = 0;
       }
@@ -27,7 +27,7 @@ const Roles = (props) => {
   }
 
   // sort
-  let keysSorted = Object.keys(roleObj).sort(function(a, b) {
+  let keysSorted = Object.keys(roleObj).sort(function (a, b) {
     return roleObj[b] - roleObj[a];
   });
   // check the number of roles in total
@@ -43,7 +43,7 @@ const Roles = (props) => {
       e(RoleElement, {
         role: keysSorted[key],
         years: roleObj[keysSorted[key]].toFixed(1),
-        key: 'roleElement' + i
+        key: "roleElement" + i,
       })
     );
 
@@ -53,11 +53,11 @@ const Roles = (props) => {
   }
 
   return e(
-    'div',
+    "div",
     null,
     // e('h3', null, 'Top ' + roleElementArray.length + ' Roles (in years)'),
-    e('div', { className: 'leftCategories' }, 'Roles measured in years'),
-    e('div', { id: 'roles' }, roleElementArray)
+    e("div", { className: "leftCategories" }, "Roles measured in years"),
+    e("div", { id: "roles" }, roleElementArray)
   );
 };
 

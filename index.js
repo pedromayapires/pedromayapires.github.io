@@ -1,10 +1,13 @@
-import MainCV from './components/main_cv.js';
-import Settings from './components/settings.js';
-import DATA from './cv_db.js';
-import Store from './utils/store.js';
+import MainCV from "./components/main_cv.js";
+import Settings from "./components/settings.js";
+import DATA from "./cv_db.js";
+import Store from "./utils/store.js";
+import updateSkillsAndRoles from "./utils/aux_methods.js";
+
+// import { GlobalProvider } from "./_crap/test_context_provider";
 
 const e = React.createElement;
-const jsonData = DATA;
+const jsonData = updateSkillsAndRoles(DATA);
 
 ReactDOM.render(
   [
@@ -13,32 +16,32 @@ ReactDOM.render(
       {},
       e(Settings),
       e(MainCV, { jsonData: jsonData }),
-      e('div', { id: 'notifications' })
-    )
+      e("div", { id: "notifications" })
+    ),
   ],
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 let showMessage = (message) => {
-  let notificationElement = document.getElementById('notifications');
+  let notificationElement = document.getElementById("notifications");
 
-  const tempElement = document.createElement('div');
+  const tempElement = document.createElement("div");
   tempElement.innerHTML = message;
-  tempElement.classList.add('fadeOut');
+  tempElement.classList.add("fadeOut");
   notificationElement.appendChild(tempElement);
   setTimeout(() => {
     notificationElement.removeChild(tempElement);
   }, 3000);
 };
 
-document.querySelectorAll('.copyValueToClip').forEach((element) => {
-  element.onclick = function() {
-    if (document.getElementById('quickCopyCheck').checked) {
+document.querySelectorAll(".copyValueToClip").forEach((element) => {
+  element.onclick = function () {
+    if (document.getElementById("quickCopyCheck").checked) {
       // create temporary textarea element because select() only applies to
       // textarea or input elements, i know... this sucks... it's frontend...
-      const tempElement = document.createElement('textarea');
+      const tempElement = document.createElement("textarea");
       // hide the shamefull hack
-      tempElement.style.display = 'hidden';
+      tempElement.style.display = "hidden";
       // copy the data we wanted to select but we are not allowed to
       tempElement.value = event.target.innerHTML;
       // taint our html with the dirty hack
@@ -46,11 +49,11 @@ document.querySelectorAll('.copyValueToClip').forEach((element) => {
       // finally select the text we wanted so badly
       tempElement.select();
       // force a copy command through code
-      document.execCommand('copy');
+      document.execCommand("copy");
       // clean our document and pretend this never happened
       document.body.removeChild(tempElement);
 
-      showMessage('Copied: ' + event.target.innerHTML);
+      showMessage("Copied: " + event.target.innerHTML);
     }
   };
 });

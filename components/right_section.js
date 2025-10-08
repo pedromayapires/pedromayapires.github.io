@@ -1,15 +1,15 @@
-import RightHeader from './right_header.js';
-import Projects from './right_projects.js';
+import RightHeader from "./right_header.js";
+import Clients from "./right_clients.js";
 
 const e = React.createElement;
 
 const RightSection = (props) => {
   return e(
-    'div',
+    "div",
     null,
     e(RightHeader, props.personal_info),
-    // e(Projects, { projects: props.projects })
-    e(Projects, props)
+    // e(Clients, { clients: props.clients })
+    e(Clients, props)
   );
 };
 

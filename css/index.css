@@ -21,7 +21,7 @@ h4 {
   text-align: center;
 }
 
-.projectContainer {
+.clientContainer {
   border: 1px solid black;
 }
 
@@ -89,22 +89,22 @@ h4 {
   /* text-align: center; */
 }
 
-.projectElement {
+.clientElement {
   /* margin-top: 25px; */
   padding-top: 15px;
 }
 
-.projectPeriodRoles,
-.projectEntityProject {
+.clientPeriodRoles,
+.clientEntityClient {
   /* font-size: medium; */
   font-weight: 600;
 }
 
-.projectPeriodRoles {
+.clientPeriodRoles {
   color: #1a7fb6;
 }
 
-.projectTechnologies {
+.clientTechnologies {
   font-size: 9pt;
 }
 
@@ -115,14 +115,14 @@ h4 {
 
 #name,
 #intro,
-#projectsHeader {
+#clientsHeader {
   font-weight: 600;
   text-align: center;
   margin: 10px;
 }
 
 #name,
-#projectsHeader {
+#clientsHeader {
   font-size: 15px;
 }
 
@@ -264,7 +264,7 @@ h4 {
     display: none;
   }
 
-  .projectElement {
+  .clientElement {
     break-inside: avoid;
     break-before: auto;
     break-after: auto;

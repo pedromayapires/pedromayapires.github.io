@@ -1,27 +1,27 @@
-import SkillElement from './left_skill_element.js';
+import SkillElement from "./left_skill_element.js";
 const e = React.createElement;
 
 const Skills = (props) => {
   let fromDate = null;
   let toDate = null;
-  let currentProject = null;
+  let currentClient = null;
   let skillObj = {};
   let yearFloatPeriod = 0;
-  for (let i = 0; i < props.projects.length; i++) {
-    currentProject = props.projects[i];
-    fromDate = new Date(currentProject.period[0]);
-    toDate = currentProject.period[1]
-      ? new Date(currentProject.period[1])
+  for (let i = 0; i < props.clients.length; i++) {
+    currentClient = props.clients[i];
+    fromDate = new Date(currentClient.period[0]);
+    toDate = currentClient.period[1]
+      ? new Date(currentClient.period[1])
       : new Date();
 
     yearFloatPeriod = (toDate - fromDate) / 31536000000;
 
-    for (const key in currentProject.skills) {
-      if (currentProject.skills[key] in props.skills_to_ignore) {
+    for (const key in currentClient.skills) {
+      if (currentClient.skills[key] in props.skills_to_ignore) {
         continue;
       }
 
-      const element = currentProject.skills[key];
+      const element = currentClient.skills[key];
       if (!(element in skillObj)) {
         skillObj[element] = 0;
       }
@@ -30,7 +30,7 @@ const Skills = (props) => {
   }
 
   // sort
-  let keysSorted = Object.keys(skillObj).sort(function(a, b) {
+  let keysSorted = Object.keys(skillObj).sort(function (a, b) {
     return skillObj[b] - skillObj[a];
   });
   // check the number of skills in total
@@ -46,7 +46,7 @@ const Skills = (props) => {
       e(SkillElement, {
         skill: keysSorted[key],
         years: skillObj[keysSorted[key]].toFixed(1),
-        key: 'skillElement' + i
+        key: "skillElement" + i,
       })
     );
     if (maxLimit && i == maxLimit) {
@@ -55,11 +55,11 @@ const Skills = (props) => {
   }
 
   return e(
-    'div',
+    "div",
     null,
     // e('h3', null, 'Top ' + skillElementArray.length + ' Skills (in years)'),
-    e('div', { className: 'leftCategories' }, 'Skills measured in years'),
-    e('div', { id: 'skills' }, skillElementArray)
+    e("div", { className: "leftCategories" }, "Skills measured in years"),
+    e("div", { id: "skills" }, skillElementArray)
   );
 };
 
