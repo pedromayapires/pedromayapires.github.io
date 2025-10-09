@@ -58,7 +58,7 @@ var DATA = {
     Pandas: 1,
   },
   tech_to_ignore: {
-    "Personal ID software": true,
+    "ID software": true,
     Rest: true,
     Git: true,
     Agile: true,
@@ -444,8 +444,8 @@ var DATA = {
           name: "Instituto Gulbenkian de ciência",
           roles: ["Backend", "Frontend", "Database Architect"],
           goals: [
-            "Added and improved features and security to a resource and user managing tool",
-            "Added changes to the database structure and improved it's security",
+            "Added and improved features and security to a software tool that allowed authenticated users to book resource/research equipment",
+            "Added changes to the tools database structure and improved it's security",
           ],
           tech: [
             "PHP",

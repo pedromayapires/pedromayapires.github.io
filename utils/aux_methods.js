@@ -26,6 +26,10 @@ const updateTechAndRoles = (jsonData) => {
       tech = projects[p].tech;
       // iterate through tech
       for (let s = 0; s < tech.length; s++) {
+        if (tech[s] in jsonData.tech_to_ignore) {
+          continue;
+        }
+
         techDuration[tech[s]] =
           tech[s] in techDuration ? duration + techDuration[tech[s]] : duration;
       }
