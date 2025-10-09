@@ -6,13 +6,13 @@ const getDuration = (fromDateStr, toDateStr = null) => {
   return yearFloatPeriod;
 };
 
-const updateSkillsAndRoles = (jsonData) => {
-  let skillDuration = {};
+const updateTechAndRoles = (jsonData) => {
+  let techDuration = {};
   let roleDuration = {};
 
   let projects = [];
   let period = [];
-  let skills = [];
+  let tech = [];
   let roles = [];
   let duration = 0;
   // iterate through clients
@@ -23,13 +23,11 @@ const updateSkillsAndRoles = (jsonData) => {
       period = projects[p].period;
       duration = getDuration(period[0], period[1]);
 
-      skills = projects[p].skills;
-      // iterate through skills
-      for (let s = 0; s < skills.length; s++) {
-        skillDuration[skills[s]] =
-          skills[s] in skillDuration
-            ? duration + skillDuration[skills[s]]
-            : duration;
+      tech = projects[p].tech;
+      // iterate through tech
+      for (let s = 0; s < tech.length; s++) {
+        techDuration[tech[s]] =
+          tech[s] in techDuration ? duration + techDuration[tech[s]] : duration;
       }
 
       roles = projects[p].roles;
@@ -43,9 +41,9 @@ const updateSkillsAndRoles = (jsonData) => {
     }
   }
 
-  jsonData["skill_duration"] = skillDuration;
+  jsonData["tech_duration"] = techDuration;
   jsonData["role_duration"] = roleDuration;
   return jsonData;
 };
 
-export default updateSkillsAndRoles;
+export default updateTechAndRoles;

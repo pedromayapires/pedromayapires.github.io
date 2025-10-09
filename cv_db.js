@@ -2,7 +2,7 @@ var DATA = {
   personal_info: {
     name: "Pedro Viana Maya de Oliveira Pires",
     intro:
-      "Backend Python developer with knowledge in Frontend, DevOps and Project Manager",
+      "Backend Python developer with knowledge in Project Management, Team Leading, Frontend and DevOps",
     location: "Portugal, Azores",
     id: "pedromayapires",
     email: "@gmail.com",
@@ -37,7 +37,7 @@ var DATA = {
       level: "Basic level",
     },
   ],
-  skills_to_highlight: [
+  tech_to_highlight: [
     "Python",
     "FastAPI",
     "Django",
@@ -53,11 +53,11 @@ var DATA = {
     "Frontend",
     "Team leader",
   ],
-  skills_to_add: {
-    // skill: number of months
+  tech_to_add: {
+    // tech: number of months
     Pandas: 1,
   },
-  skills_to_ignore: {
+  tech_to_ignore: {
     "Personal ID software": true,
     Rest: true,
     Git: true,
@@ -90,9 +90,10 @@ var DATA = {
           name: "ScalaBit",
           period: ["2025-05-12", "2025-09-01"],
           roles: ["Backend", "DevOps"],
-          description:
+          goals: [
             "Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Git",
@@ -108,9 +109,10 @@ var DATA = {
           name: "KCS-IT",
           period: ["2024-09-16", "2025-02-01"],
           roles: ["Backend"],
-          description:
+          goals: [
             "Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Ubuntu",
@@ -130,9 +132,10 @@ var DATA = {
           name: "A.I.",
           period: ["2024-04-01", "2024-07-15"],
           roles: ["Backend"],
-          description:
+          goals: [
             "Creating a test microservice using the help of Co-Pilot to check the usefulness and efficiency of the tool.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Ubuntu",
@@ -147,9 +150,10 @@ var DATA = {
           name: "Microservices",
           period: ["2022-07-18", "2024-04-01"],
           roles: ["Backend"],
-          description:
+          goals: [
             "Creating microservices and adding features to existing microservices with FastAPI. Using unit tests and Postman scripts to check for code integrity.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Ubuntu",
@@ -172,9 +176,10 @@ var DATA = {
           name: "Travelling search engine",
           period: ["2021-02-01", "2021-09-01"],
           roles: ["Backend"],
-          description:
+          goals: [
             "Creating webservices and improving existing code to communicate with different projects. Usage of agile and testing methodologies to keep code quality high.",
-          skills: ["Agile", "Python", "Ubuntu", "Git", "Virtualbox", "Rest"],
+          ],
+          tech: ["Agile", "Python", "Ubuntu", "Git", "Virtualbox", "Rest"],
         },
       ],
     },
@@ -185,9 +190,10 @@ var DATA = {
           name: "Travelling search engine",
           period: ["2019-10-01", "2020-05-01"],
           roles: ["Backend", "Team leader"],
-          description:
+          goals: [
             "Managing a team and creating the backend and database structure for a new software tool to gather flight and customer information and manage that information.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Django",
@@ -205,12 +211,13 @@ var DATA = {
           name: "Food supplements",
           period: ["2019-07-01", "2019-10-01"],
           roles: ["Backend", "Frontend"],
-          description:
+          goals: [
             "Creating and changing Google lambda functions in the backend and creating a frontend to allow better data management and better user interface for the products.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
-            "Google lambda",
+            "Google functions",
             "Ubuntu",
             "AngularJs",
             "Javascript",
@@ -222,9 +229,10 @@ var DATA = {
           name: "Security software",
           period: ["2019-04-01", "2019-07-01"],
           roles: ["Backend", "Frontend", "Team leader"],
-          description:
+          goals: [
             "Created a web application that would allow a user to introduce sites to be tested by an external security API.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Django",
@@ -241,9 +249,10 @@ var DATA = {
           name: "Retail branding and sourcing services",
           period: ["2018-10-01", "2019-04-01"],
           roles: ["Backend", "Project manager"],
-          description:
+          goals: [
             "Add and optimize existing code, add and optimize work procedures and do interviews to aquire future team members.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Django",
@@ -260,9 +269,10 @@ var DATA = {
           name: "Product assortment optimization software for retailers",
           period: ["2018-04-02", "2018-10-01"],
           roles: ["Backend", "DevOps"],
-          description:
+          goals: [
             "Configuring servers, optimizing code, optimizing procedures, configuring and installing the software in different servers, adding and fixing existing features.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "Flask",
@@ -285,9 +295,10 @@ var DATA = {
           name: "Data collector",
           period: ["2017-12-26", "2018-03-30"],
           roles: ["Backend", "Project manager", "Team leader"],
-          description:
+          goals: [
             "Creating a web application based on open data tool uData to collect and display information from different entities in a specific format.",
-          skills: [
+          ],
+          tech: [
             "Agile",
             "Python",
             "MongoDB",
@@ -309,11 +320,12 @@ var DATA = {
       projects: [
         {
           name: "Python script maintenance and application testing",
-          period: ["2017-09-11", "2017-11-01"],
+          period: ["2017-09-11", "2017-11-02"],
           roles: ["Backend"],
-          description:
+          goals: [
             "Development and maintenance of existing Python scripts, database structural optimization and network bandwidth testing.",
-          skills: ["Python", "MySql", "NodeJs", "PHP", "Rest"],
+          ],
+          tech: ["Python", "MySql", "NodeJs", "PHP", "Rest"],
         },
       ],
     },
@@ -322,11 +334,12 @@ var DATA = {
       projects: [
         {
           name: "Marketing & Call center",
-          period: ["2016-06-01", "2017-08-31"],
+          period: ["2016-06-01", "2017-09-01"],
           roles: ["Backend", "Frontend"],
-          description:
+          goals: [
             "Development, updating / maintaining backoffice pages, creating and maintaining existing landing pages, database maintenance, minor helpdesk and system administration tasks.",
-          skills: [
+          ],
+          tech: [
             "NodeJs",
             "AngularJs",
             "PostgreSql",
@@ -348,11 +361,12 @@ var DATA = {
       projects: [
         {
           name: "H.R. Manager",
-          period: ["2016-03-01", "2016-05-31"],
+          period: ["2016-03-02", "2016-06-02"],
           roles: ["Backend", "Frontend", "Project manager"],
-          description:
+          goals: [
             "Data import from existing sources, created a tool, in Django, to edit, remove and add human resources information later to be stored in a MySql database.",
-          skills: [
+          ],
+          tech: [
             "Python",
             "Django",
             "Javascript",
@@ -369,11 +383,12 @@ var DATA = {
         },
         {
           name: "Resource, user and document manager",
-          period: ["2015-09-01", "2016-03-01"],
+          period: ["2015-09-02", "2016-03-02"],
           roles: ["Backend", "Frontend", "Project manager"],
-          description:
+          goals: [
             "User management and access by webpage and Ldap. Resource managing tool made in Django that allowed adding, changing and removing booking entries for specific resources while managing and importing users from Ldap. Entry reports where done with associated costs.",
-          skills: [
+          ],
+          tech: [
             "Python",
             "Django",
             "Javascript",
@@ -395,11 +410,20 @@ var DATA = {
       projects: [
         {
           name: "Document manager",
-          period: ["2013-01-01", "2015-06-30"],
-          roles: ["Backend", "Frontend", "Project manager"],
-          description:
-            "Document management application for the accounting and administrative units. Each document type contains different metadata with error checking/specific formating. Document search by type, metadata and comments. Stamp printing and data import from webservices. This was an application done with Django, that also allowed managing users.",
-          skills: [
+          period: ["2013-01-02", "2015-07-02"],
+          roles: [
+            "Backend",
+            "Frontend",
+            "Project manager",
+            "Database Architect",
+          ],
+          goals: [
+            "Got the requirements from the administration team for a document manager tool",
+            "Created the full database to support the information for that tool",
+            "Created the backend and frontend code for the tool",
+            "Allowed the communication and authentication between the tool and the existing infrastructure of the institute",
+          ],
+          tech: [
             "Python",
             "Django",
             "Javascript",
@@ -416,12 +440,14 @@ var DATA = {
         },
         {
           name: "Resource manager",
-          period: ["2010-12-01", "2013-01-01"],
+          period: ["2010-12-02", "2013-01-02"],
           name: "Instituto Gulbenkian de ciência",
-          roles: ["Backend", "Frontend"],
-          description:
-            "Resource managing by adding, changing and removing entries. Entry report with associated costs, user and respective access management.",
-          skills: [
+          roles: ["Backend", "Frontend", "Database Architect"],
+          goals: [
+            "Added and improved features and security to a resource and user managing tool",
+            "Added changes to the database structure and improved it's security",
+          ],
+          tech: [
             "PHP",
             "Javascript",
             "Jquery",
@@ -442,11 +468,12 @@ var DATA = {
       projects: [
         {
           name: "Document manager with Alfresco",
-          period: ["2010-05-01", "2010-11-01"],
-          roles: ["Backend", "Frontend", "Intern"],
-          description:
-            "Alfresco application analysis, feature testing, planning and implementing.",
-          skills: [
+          period: ["2010-05-02", "2010-11-02"],
+          roles: ["Backend", "Frontend"],
+          goals: [
+            "Alfresco application analysis, feature planning, implementation and testing",
+          ],
+          tech: [
             "Javascript",
             "Html",
             "CSS",
@@ -454,18 +481,19 @@ var DATA = {
             "Spring",
             "JSF",
             "Hibernate",
-            "Personal ID software",
+            "ID software",
             "Subversion",
             "Rest",
           ],
         },
         {
           name: "Document manager with KnowledgeTree",
-          period: ["2010-03-15", "2010-05-01"],
+          period: ["2010-03-15", "2010-05-02"],
           roles: ["Backend", "Frontend"],
-          description:
-            "KnowledgeTree application analysis, feature testing, planning and implementing. KnowledgeTree was a toold with PHP on the backend and regular Javascript for the frontend.",
-          skills: ["PHP", "Javascript", "Html", "CSS"],
+          goals: [
+            "KnowledgeTree application analysis, feature planning, implementation and testing",
+          ],
+          tech: ["PHP", "Javascript", "Html", "CSS"],
         },
       ],
     },

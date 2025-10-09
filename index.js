@@ -2,10 +2,10 @@ import MainCV from "./components/main_cv.js";
 import Settings from "./components/settings.js";
 import DATA from "./cv_db.js";
 import Store from "./utils/store.js";
-import updateSkillsAndRoles from "./utils/aux_methods.js";
+import updateTechAndRoles from "./utils/aux_methods.js";
 
 const e = React.createElement;
-const jsonData = updateSkillsAndRoles(DATA);
+const jsonData = updateTechAndRoles(DATA);
 
 ReactDOM.render(
   [

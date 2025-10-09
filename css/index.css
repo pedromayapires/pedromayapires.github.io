@@ -1,10 +1,10 @@
 p {
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin:0;
+  display: block;
 }
 
 h3 {
-  margin: 15px;
+  margin: 10px;
   text-align: center;
   color: #1a7fb6;
 }
@@ -21,25 +21,16 @@ h4 {
   text-align: center;
 }
 
-.clientContainer {
-  border: 1px solid black;
-}
-
 .contactType,
 .degreeType,
 .language,
 .rolesUsed,
-.skillsLearned,
-.skillsUsed {
+.techLearned {
   font-weight: 600;
   margin-right: 5px;
 }
 
-.skillsUsed {
-  color: #1a7fb6;
-}
-
-.skillElement,
+.techElement,
 .roleElement {
   width: 102px;
   display: flex;
@@ -74,7 +65,7 @@ h4 {
   margin: 5px;
 }
 
-#skills,
+#tech,
 #roles {
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +74,7 @@ h4 {
 
 .leftCategories {
   margin: 15px 0px 5px 0px;
-  font-size: 15px;
+  font-size: 11pt;
   font-weight: 600;
   text-decoration-line: underline;
   /* text-align: center; */
@@ -91,21 +82,54 @@ h4 {
 
 .clientElement {
   /* margin-top: 25px; */
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
-.clientPeriodRoles,
-.clientElementData {
-  /* font-size: medium; */
+.clientHeader{
   font-weight: 600;
-}
-
-.clientPeriodRoles {
+  font-size: 10pt;
   color: #1a7fb6;
 }
 
+.clientProjectHeader{
+  font-weight: 600;
+  color: #1a7fb6;
+}
+.clientProjectHeader
+.clientProjectRoles,
+.clientProjectData {
+  font-size: 10pt;
+  /* border-left: 1px solid black;  */
+  /* padding-left: 2px; */
+}
+
+.clientProjectGoals{
+  margin:0px;
+}
+
+.clientProjectGoal{
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.clientProjectName {
+  color: black;
+  font-size: 12pt;
+}
+
+.clientProjectRoles {
+  color: black;
+}
+
+.clientProjectDataTechUsed {
+  color: #1a7fb6;
+  font-weight: 600;
+}
+
+.clientProjectDataTechUsed,
 .clientTechnologies {
   font-size: 9pt;
+  padding-bottom: 5px;
 }
 
 .degrees,
@@ -114,19 +138,14 @@ h4 {
 }
 
 #name,
-#intro,
-#clientsHeader {
+#intro {
   font-weight: 600;
   text-align: center;
   margin: 10px;
 }
 
-#name,
-#clientsHeader {
-  font-size: 15px;
-}
-
 #name {
+  font-size: 20px;
   color: #1a7fb6;
 }
 
@@ -160,7 +179,7 @@ h4 {
 }
 
 #rightHeader {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   text-align: center;
 }
 

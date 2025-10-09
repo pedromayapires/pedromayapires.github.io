@@ -1,22 +1,22 @@
-import Contacts from './left_contacts.js';
-import Roles from './left_roles.js';
-import Skills from './left_skills.js';
-import Languages from './left_languages.js';
-import Degrees from './left_degrees.js';
+import Contacts from "./left_contacts.js";
+import Roles from "./left_roles.js";
+import Tech from "./left_tech.js";
+import Languages from "./left_languages.js";
+import Degrees from "./left_degrees.js";
 const e = React.createElement;
 
 const LeftSection = (props) => {
   return e(
-    'div',
+    "div",
     null,
     e(
-      'div',
-      { id: 'photoContainer' },
-      e('img', { id: 'photo', src: './imgs/photo.png' })
+      "div",
+      { id: "photoContainer" },
+      e("img", { id: "photo", src: "./imgs/photo.png" })
     ),
     e(Contacts, props.personal_info),
     e(Roles, props),
-    e(Skills, props),
+    e(Tech, props),
     e(Languages, props),
     e(Degrees, props)
   );
