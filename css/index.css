@@ -47,7 +47,6 @@ h4 {
 #notifications {
   position: fixed;
   width: 200px;
-  /* border: 1px solid black; */
   top: 20px;
   right: 20px;
 }
@@ -77,11 +76,9 @@ h4 {
   font-size: 11pt;
   font-weight: 600;
   text-decoration-line: underline;
-  /* text-align: center; */
 }
 
 .clientElement {
-  /* margin-top: 25px; */
   padding-top: 10px;
 }
 
@@ -95,12 +92,11 @@ h4 {
   font-weight: 600;
   color: #1a7fb6;
 }
-.clientProjectHeader
+
 .clientProjectRoles,
 .clientProjectData {
-  font-size: 10pt;
-  /* border-left: 1px solid black;  */
-  /* padding-left: 2px; */
+  font-size: 9pt;
+  padding-top: 2px;
 }
 
 .clientProjectGoals{
@@ -164,22 +160,17 @@ h4 {
 
 #leftContainer {
   font-size: 9pt;
-  /* border-right: 1px solid #1a7fb6; */
   z-index: 9999;
   margin: 0px;
   background-color: #cae8f8;
-  /* bottom: 0px; */
   width: 28%;
-  /* width: 300px; */
 }
 
 #rightContainer {
   width: 75%;
-  /* width: 1900px; */
 }
 
 #rightHeader {
-  /* margin-bottom: 25px; */
   text-align: center;
 }
 
@@ -203,7 +194,6 @@ h4 {
   height: 100px;
   background-size: cover;
   border: 1px solid #1a7fb6;
-  /* border-radius: 25% 25% 25% 25%; */
   border-radius: 10px;
 }
 

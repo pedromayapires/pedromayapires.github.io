@@ -37,26 +37,26 @@ var DATA = {
       level: "Basic level",
     },
   ],
-  tech_to_highlight: [
-    "Python",
-    "FastAPI",
-    "Django",
-    "Docker",
-    "PyTest",
-    "MySql",
-    "PostgreSql",
-  ],
-  roles_to_highlight: [
-    "Backend",
-    "DevOps",
-    "Project manager",
-    "Frontend",
-    "Team leader",
-  ],
-  tech_to_add: {
-    // tech: number of months
-    Pandas: 1,
-  },
+  // tech_to_highlight: [
+  //   "Python",
+  //   "FastAPI",
+  //   "Django",
+  //   "Docker",
+  //   "PyTest",
+  //   "MySql",
+  //   "PostgreSql",
+  // ],
+  // roles_to_highlight: [
+  //   "Backend",
+  //   "DevOps",
+  //   "Project manager",
+  //   "Frontend",
+  //   "Team leader",
+  // ],
+  // tech_to_add: {
+  //   // tech: number of months
+  //   Pandas: 1,
+  // },
   tech_to_ignore: {
     "ID software": true,
     Rest: true,
@@ -76,11 +76,22 @@ var DATA = {
     PHP: true,
     Mercurial: true,
     Jquery: true,
-    "Google functions": true,
+    "Google cloud functions": true,
     "Git lab": true,
-    Supervisord: true,
+    SupervisorD: true,
     "Co-Pilot": true,
     Virtualbox: true,
+    AngularJs: true,
+    Javascript: true,
+    Panda: true,
+    Numpy: true,
+    Postman: true,
+    Dapr: true,
+    NodeJs: true,
+    React: true,
+    Scrapy: true,
+    "Beautiful Soup": true,
+    Webhooks: true,
   },
   clients: [
     {
@@ -88,10 +99,14 @@ var DATA = {
       projects: [
         {
           name: "ScalaBit",
-          period: ["2025-05-12", "2025-09-01"],
+          team_size: 6,
+          period: ["2025-05-12", "2025-09-02"],
           roles: ["Backend", "DevOps"],
           goals: [
-            "Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker",
+            "Created microservices",
+            "Created and improved Git actions and workflows",
+            "Added unit tests for code integrity.",
+            "Conducted code reviews",
           ],
           tech: [
             "Agile",
@@ -107,10 +122,12 @@ var DATA = {
         },
         {
           name: "KCS-IT",
-          period: ["2024-09-16", "2025-02-01"],
-          roles: ["Backend"],
+          team_size: 4,
+          period: ["2024-09-16", "2025-02-02"],
+          roles: ["Backend", "Database Architect"],
           goals: [
-            "Creating microservices, adding and modifying features with Python using FastAPI, Postgresql and Docker",
+            "Created microservices and their respective databases",
+            "Added unit tests and Postman scripts for code integrity.",
           ],
           tech: [
             "Agile",
@@ -119,6 +136,7 @@ var DATA = {
             "Git",
             "Rest",
             "FastAPI",
+            "Postman",
             "PyTest",
             "Docker",
           ],
@@ -130,10 +148,11 @@ var DATA = {
       projects: [
         {
           name: "A.I.",
-          period: ["2024-04-01", "2024-07-15"],
+          team_size: 1,
+          period: ["2024-04-02", "2024-07-15"],
           roles: ["Backend"],
           goals: [
-            "Creating a test microservice using the help of Co-Pilot to check the usefulness and efficiency of the tool.",
+            "Created a microservice using the help of Co-Pilot as a usefulness and efficiency test of A.I.",
           ],
           tech: [
             "Agile",
@@ -148,10 +167,12 @@ var DATA = {
         },
         {
           name: "Microservices",
-          period: ["2022-07-18", "2024-04-01"],
+          team_size: 3,
+          period: ["2022-07-18", "2024-04-02"],
           roles: ["Backend"],
           goals: [
-            "Creating microservices and adding features to existing microservices with FastAPI. Using unit tests and Postman scripts to check for code integrity.",
+            "Created and improved microservices",
+            "Added unit tests and Postman scripts for code integrity.",
           ],
           tech: [
             "Agile",
@@ -163,6 +184,7 @@ var DATA = {
             "Dapr",
             "Docker",
             "FastAPI",
+            "Postman",
             "PyTest",
             "MySql",
           ],
@@ -174,12 +196,23 @@ var DATA = {
       projects: [
         {
           name: "Travelling search engine",
-          period: ["2021-02-01", "2021-09-01"],
+          team_size: 3,
+          period: ["2021-02-02", "2021-09-02"],
           roles: ["Backend"],
           goals: [
-            "Creating webservices and improving existing code to communicate with different projects. Usage of agile and testing methodologies to keep code quality high.",
+            "Created and improved webservices to import and transform data from different clients",
+            "Added unit tests and Postman scripts for code integrity.",
           ],
-          tech: ["Agile", "Python", "Ubuntu", "Git", "Virtualbox", "Rest"],
+          tech: [
+            "Agile",
+            "Python",
+            "Ubuntu",
+            "Git",
+            "PyTest",
+            "Postman",
+            "Virtualbox",
+            "Rest",
+          ],
         },
       ],
     },
@@ -188,10 +221,13 @@ var DATA = {
       projects: [
         {
           name: "Travelling search engine",
-          period: ["2019-10-01", "2020-05-01"],
-          roles: ["Backend", "Team leader"],
+          team_size: 4,
+          period: ["2019-10-02", "2020-05-02"],
+          roles: ["Backend", "Database Architect", "Team leader"],
           goals: [
-            "Managing a team and creating the backend and database structure for a new software tool to gather flight and customer information and manage that information.",
+            "Managed a team",
+            "Created the backend and database structure for a customer support tool",
+            "Conducted code reviews",
           ],
           tech: [
             "Agile",
@@ -209,15 +245,17 @@ var DATA = {
         },
         {
           name: "Food supplements",
-          period: ["2019-07-01", "2019-10-01"],
+          team_size: 3,
+          period: ["2019-07-02", "2019-10-02"],
           roles: ["Backend", "Frontend"],
           goals: [
-            "Creating and changing Google lambda functions in the backend and creating a frontend to allow better data management and better user interface for the products.",
+            "Created and improved Google Cloud Functions",
+            "Created a frontend for users and to allow better data management",
           ],
           tech: [
             "Agile",
             "Python",
-            "Google functions",
+            "Google cloud functions",
             "Ubuntu",
             "AngularJs",
             "Javascript",
@@ -227,10 +265,12 @@ var DATA = {
         },
         {
           name: "Security software",
-          period: ["2019-04-01", "2019-07-01"],
-          roles: ["Backend", "Frontend", "Team leader"],
+          team_size: 2,
+          period: ["2019-04-02", "2019-07-02"],
+          roles: ["Backend", "Frontend"],
           goals: [
-            "Created a web application that would allow a user to introduce sites to be tested by an external security API.",
+            "Created the backend code and the database and added webhooks",
+            "Created frontend code but not the design",
           ],
           tech: [
             "Agile",
@@ -243,14 +283,19 @@ var DATA = {
             "Virtualbox",
             "Docker",
             "Rest",
+            "Webhooks",
           ],
         },
         {
-          name: "Retail branding and sourcing services",
-          period: ["2018-10-01", "2019-04-01"],
-          roles: ["Backend", "Project manager"],
+          name: "Sourcing services",
+          team_size: 1,
+          period: ["2018-10-02", "2019-04-02"],
+          roles: ["Backend", "Project manager", "Database Architect"],
           goals: [
-            "Add and optimize existing code, add and optimize work procedures and do interviews to aquire future team members.",
+            "Added and optimized code",
+            "Improved database structure and Django's fixtures and migrations",
+            "Advised for roles to have and interviewed candidates",
+            "Created web scraping scripts",
           ],
           tech: [
             "Agile",
@@ -261,26 +306,36 @@ var DATA = {
             "AWS",
             "Virtualbox",
             "PostgreSql",
+            "Scrapy",
+            "Beautiful Soup",
             "AWS",
             "Rest",
           ],
         },
         {
-          name: "Product assortment optimization software for retailers",
-          period: ["2018-04-02", "2018-10-01"],
+          name: "Product assortment for retailers",
+          team_size: 7,
+          period: ["2018-04-02", "2018-10-02"],
           roles: ["Backend", "DevOps"],
           goals: [
-            "Configuring servers, optimizing code, optimizing procedures, configuring and installing the software in different servers, adding and fixing existing features.",
+            "Improved server performance through configuration",
+            "Optimized code and database procedures",
+            "Server software installation",
+            "Added and and improved existing features",
+            "Applied math equations in Python using Panda and Numpy",
           ],
           tech: [
             "Agile",
+            "Ansible",
+            "Airflow",
             "Python",
             "Flask",
-            "Ansible",
             "CentOS",
             "Git lab",
-            "Supervisord",
+            "SupervisorD",
             "Virtualbox",
+            "Panda",
+            "Numpy",
             "Ubuntu",
             "AWS",
             "Rest",
@@ -293,10 +348,19 @@ var DATA = {
       projects: [
         {
           name: "Data collector",
-          period: ["2017-12-26", "2018-03-30"],
-          roles: ["Backend", "Project manager", "Team leader"],
+          team_size: 3,
+          period: ["2017-12-26", "2018-04-02"],
+          roles: [
+            "Backend",
+            "Project manager",
+            "Team leader",
+            "Database Architect",
+          ],
           goals: [
-            "Creating a web application based on open data tool uData to collect and display information from different entities in a specific format.",
+            "Got the requirements to create a data collector based on tool called uData",
+            "Managed the project and a small team",
+            "Created a Rest data collector to import and display data from different government entities",
+            "Added national id authentication and verification to the tool",
           ],
           tech: [
             "Agile",
@@ -311,6 +375,7 @@ var DATA = {
             "Virtualbox",
             "Azure",
             "Rest",
+            "ID software",
           ],
         },
       ],
@@ -319,11 +384,13 @@ var DATA = {
       name: "Agap2It",
       projects: [
         {
-          name: "Python script maintenance and application testing",
+          name: "Script maintenance and application testing",
+          team_size: 1,
           period: ["2017-09-11", "2017-11-02"],
-          roles: ["Backend"],
+          roles: ["Backend", "Database Architect"],
           goals: [
-            "Development and maintenance of existing Python scripts, database structural optimization and network bandwidth testing.",
+            "Development and maintenance of Python scripts, database structural optimization",
+            "Network bandwidth testing using different software tools",
           ],
           tech: ["Python", "MySql", "NodeJs", "PHP", "Rest"],
         },
@@ -334,10 +401,13 @@ var DATA = {
       projects: [
         {
           name: "Marketing & Call center",
-          period: ["2016-06-01", "2017-09-01"],
-          roles: ["Backend", "Frontend"],
+          team_size: 6,
+          period: ["2016-06-02", "2017-09-02"],
+          roles: ["Backend", "Frontend", "Database Architect"],
           goals: [
-            "Development, updating / maintaining backoffice pages, creating and maintaining existing landing pages, database maintenance, minor helpdesk and system administration tasks.",
+            "Developed, updated and maintained backoffice pages",
+            "Created and maintained existing landing pages",
+            "Database maintenance and improvement, minor helpdesk and system administration tasks",
           ],
           tech: [
             "NodeJs",
@@ -361,10 +431,17 @@ var DATA = {
       projects: [
         {
           name: "H.R. Manager",
+          team_size: 1,
           period: ["2016-03-02", "2016-06-02"],
-          roles: ["Backend", "Frontend", "Project manager"],
+          roles: [
+            "Backend",
+            "Frontend",
+            "Project manager",
+            "Database Architect",
+          ],
           goals: [
-            "Data import from existing sources, created a tool, in Django, to edit, remove and add human resources information later to be stored in a MySql database.",
+            "Got the requirements from the Human Resources team for a tool",
+            "Created a tool to import and match information from H.R., from several files and existing database, to place in a new database structure",
           ],
           tech: [
             "Python",
@@ -383,10 +460,18 @@ var DATA = {
         },
         {
           name: "Resource, user and document manager",
+          team_size: 1,
           period: ["2015-09-02", "2016-03-02"],
-          roles: ["Backend", "Frontend", "Project manager"],
+          roles: [
+            "Backend",
+            "Frontend",
+            "Project manager",
+            "Database Architect",
+          ],
           goals: [
-            "User management and access by webpage and Ldap. Resource managing tool made in Django that allowed adding, changing and removing booking entries for specific resources while managing and importing users from Ldap. Entry reports where done with associated costs.",
+            "Got the requirements from different research departments for a scientific equipment booking system with user assistance",
+            "Created the backend, frontend and database for that web application with LDAP user authentication from the existing infrastructure",
+            "Created and added a simple document/file manager to that tool, as an application in Django, to the mentioned booking system",
           ],
           tech: [
             "Python",
@@ -410,6 +495,7 @@ var DATA = {
       projects: [
         {
           name: "Document manager",
+          team_size: 1,
           period: ["2013-01-02", "2015-07-02"],
           roles: [
             "Backend",
@@ -440,8 +526,8 @@ var DATA = {
         },
         {
           name: "Resource manager",
+          team_size: 4,
           period: ["2010-12-02", "2013-01-02"],
-          name: "Instituto Gulbenkian de ciência",
           roles: ["Backend", "Frontend", "Database Architect"],
           goals: [
             "Added and improved features and security to a software tool that allowed authenticated users to book resource/research equipment",
@@ -468,6 +554,7 @@ var DATA = {
       projects: [
         {
           name: "Document manager with Alfresco",
+          team_size: 3,
           period: ["2010-05-02", "2010-11-02"],
           roles: ["Backend", "Frontend"],
           goals: [
@@ -488,6 +575,7 @@ var DATA = {
         },
         {
           name: "Document manager with KnowledgeTree",
+          team_size: 3,
           period: ["2010-03-15", "2010-05-02"],
           roles: ["Backend", "Frontend"],
           goals: [
