@@ -53,6 +53,12 @@ const ClientElement = (props) => {
       ),
       e(
         "p",
+        {},
+        e("label", { className: "clientProjectTeamSize" }, "Team size: "),
+        project.team_size
+      ),
+      e(
+        "p",
         { className: "clientTechnologies" },
         e("label", { className: "clientProjectDataTechUsed" }, "Tech used: "),
         project.tech.join(", ")

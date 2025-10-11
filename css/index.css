@@ -79,7 +79,7 @@ h4 {
 }
 
 .clientElement {
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .clientHeader{
@@ -117,15 +117,21 @@ h4 {
   color: black;
 }
 
+.clientProjectTeamSize,
 .clientProjectDataTechUsed {
-  color: #1a7fb6;
+  /* color: #1a7fb6; */
   font-weight: 600;
 }
 
 .clientProjectDataTechUsed,
+.clientProjectTeamSize,
 .clientTechnologies {
-  font-size: 9pt;
-  padding-bottom: 5px;
+  font-size: 8pt;
+}
+
+.clientTechnologies{
+  margin-bottom: 5px;
+  /* border-bottom: 1px solid black; */
 }
 
 .degrees,
