@@ -76,7 +76,7 @@ var DATA = {
     PHP: true,
     Mercurial: true,
     Jquery: true,
-    "Google cloud functions": true,
+    "Google functions": true,
     "Git lab": true,
     SupervisorD: true,
     "Co-Pilot": true,
@@ -103,8 +103,8 @@ var DATA = {
           period: ["2025-05-12", "2025-09-02"],
           roles: ["Backend", "DevOps"],
           goals: [
+            "Created and improved Git actions and workflows to improve reliability of other repositories code and integrity",
             "Created microservices",
-            "Created and improved Git actions and workflows",
             "Added unit tests for code integrity.",
             "Conducted code reviews",
           ],
@@ -171,7 +171,7 @@ var DATA = {
           period: ["2022-07-18", "2024-04-02"],
           roles: ["Backend"],
           goals: [
-            "Created and improved microservices",
+            "Created and improved microservices to connect multiple consultancy APIs ",
             "Added unit tests and Postman scripts for code integrity.",
           ],
           tech: [
@@ -249,13 +249,13 @@ var DATA = {
           period: ["2019-07-02", "2019-10-02"],
           roles: ["Backend", "Frontend"],
           goals: [
-            "Created and improved Google Cloud Functions",
-            "Created a frontend for users and to allow better data management",
+            "Created and improved Google cloud functions",
+            "Created a frontend for users and to allow better local data management",
           ],
           tech: [
             "Agile",
             "Python",
-            "Google cloud functions",
+            "Google functions",
             "Ubuntu",
             "AngularJs",
             "Javascript",
@@ -269,7 +269,7 @@ var DATA = {
           period: ["2019-04-02", "2019-07-02"],
           roles: ["Backend", "Frontend"],
           goals: [
-            "Created the backend code and the database and added webhooks",
+            "Created the backend code and the database and added webhooks for a security scan report from a tool",
             "Created frontend code but not the design",
           ],
           tech: [

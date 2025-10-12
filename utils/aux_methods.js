@@ -1,9 +1,19 @@
-const getDuration = (fromDateStr, toDateStr = null) => {
-  let fromDate = new Date(fromDateStr);
-  let toDate = toDateStr ? new Date(toDateStr) : new Date();
-  let yearFloatPeriod = (toDate - fromDate) / 31536000000;
+const getYearsAndMonths = (totalMonths) => {
+  const years = Math.floor(Math.abs(totalMonths) / 12);
+  const months = Math.abs(totalMonths) % 12;
 
-  return yearFloatPeriod;
+  return [years, months];
+};
+
+const getTotalMonths = (fromDateStr, toDateStr = null) => {
+  const start = new Date(fromDateStr);
+  const end = new Date(toDateStr);
+
+  const years = end.getFullYear() - start.getFullYear();
+  const months = end.getMonth() - start.getMonth();
+
+  // return total months;
+  return years * 12 + months;
 };
 
 const updateTechAndRoles = (jsonData) => {
@@ -15,13 +25,15 @@ const updateTechAndRoles = (jsonData) => {
   let tech = [];
   let roles = [];
   let duration = 0;
+  let totalExperience = 0;
   // iterate through clients
   for (let c = 0; c < jsonData.clients.length; c++) {
     projects = jsonData.clients[c].projects;
     // iterate through projects
     for (let p = 0; p < projects.length; p++) {
       period = projects[p].period;
-      duration = getDuration(period[0], period[1]);
+      duration = getTotalMonths(period[0], period[1]);
+      totalExperience += duration;
 
       tech = projects[p].tech;
       // iterate through tech
@@ -47,7 +59,9 @@ const updateTechAndRoles = (jsonData) => {
 
   jsonData["tech_duration"] = techDuration;
   jsonData["role_duration"] = roleDuration;
+  jsonData["total_experience"] = totalExperience;
   return jsonData;
 };
 
+export { getYearsAndMonths, updateTechAndRoles };
 export default updateTechAndRoles;

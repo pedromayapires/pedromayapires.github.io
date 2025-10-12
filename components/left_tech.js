@@ -17,7 +17,7 @@ const Tech = (props) => {
     techElementArray.push(
       e(TechElement, {
         tech: keysSorted[key],
-        years: techObj[keysSorted[key]].toFixed(1),
+        months: techObj[keysSorted[key]].toFixed(1),
         key: "techElement" + i,
       })
     );
@@ -26,7 +26,7 @@ const Tech = (props) => {
   return e(
     "div",
     null,
-    e("div", { className: "leftCategories" }, "Tech experience (years)"),
+    e("div", { className: "leftCategories" }, "Tech experience"),
     e("div", { id: "tech" }, techElementArray)
   );
 };

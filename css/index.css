@@ -1,5 +1,5 @@
 p {
-  margin:0;
+  margin: 0;
   display: block;
 }
 
@@ -23,20 +23,32 @@ h4 {
 
 .contactType,
 .degreeType,
-.language,
-.rolesUsed,
-.techLearned {
+.language{
   font-weight: 600;
   margin-right: 5px;
 }
 
-.techElement,
-.roleElement {
-  width: 102px;
-  display: flex;
+.techRoleP{
   border-bottom: 1px solid black;
-  margin: 4px 7px 4px 0;
+  margin: 4px 0px 4px 0;
+}
+
+.techRoleP{
+  text-align: left;
+  display: flex;
   justify-content: flex-end;
+  width: 100%;
+}
+
+.techRoleLabel{
+  font-weight: 600;
+  text-align: left;
+  width: 53%;
+}
+
+.techRoleDuration{
+  text-align: right;
+  width: 47%;
 }
 
 .smallWarning {
@@ -82,54 +94,52 @@ h4 {
   padding-top: 7px;
 }
 
-.clientHeader{
+.clientHeader {
   font-weight: 600;
   font-size: 10pt;
   color: #1a7fb6;
 }
 
-.clientProjectHeader{
+.clientProjectHeader {
   font-weight: 600;
   color: #1a7fb6;
 }
 
-.clientProjectRoles,
+.projectRoles,
 .clientProjectData {
   font-size: 9pt;
   padding-top: 2px;
 }
 
-.clientProjectGoals{
-  margin:0px;
+.clientProjectGoals {
+  margin: 0px;
 }
 
-.clientProjectGoal{
+.clientProjectGoal {
   padding-left: 10px;
   margin: 0px;
 }
 
-.clientProjectName {
+.projectName {
   color: black;
   font-size: 12pt;
 }
 
-.clientProjectRoles {
+.projectRoles {
   color: black;
 }
 
-.clientProjectTeamSize,
-.clientProjectDataTechUsed {
+.projectLabel {
   /* color: #1a7fb6; */
   font-weight: 600;
 }
 
-.clientProjectDataTechUsed,
-.clientProjectTeamSize,
+.projectLabel,
 .clientTechnologies {
   font-size: 8pt;
 }
 
-.clientTechnologies{
+.clientTechnologies {
   margin-bottom: 5px;
   /* border-bottom: 1px solid black; */
 }
@@ -262,7 +272,7 @@ h4 {
 @media print {
   body {
     height: 100%;
-    background: linear-gradient(90deg, #cae8f8 28%, #ffFFFF 0);
+    background: linear-gradient(90deg, #cae8f8 28%, #ffffff 0);
   }
 
   #mainContainer {

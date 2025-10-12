@@ -38,11 +38,7 @@ const ClientElement = (props) => {
         "p",
         { className: "clientProjectHeader" },
         e("label", {}, " - " + project.name + " | "),
-        e(
-          "label",
-          { className: "clientProjectRoles" },
-          project.roles.join(", ")
-        )
+        e("label", { className: "projectRoles" }, project.roles.join(", "))
       ),
       e(
         "div",
@@ -54,13 +50,13 @@ const ClientElement = (props) => {
       e(
         "p",
         {},
-        e("label", { className: "clientProjectTeamSize" }, "Team size: "),
+        e("label", { className: "projectLabel" }, "Team size: "),
         project.team_size
       ),
       e(
         "p",
         { className: "clientTechnologies" },
-        e("label", { className: "clientProjectDataTechUsed" }, "Tech used: "),
+        e("label", { className: "projectLabel" }, "Tech used: "),
         project.tech.join(", ")
       )
     );
@@ -93,7 +89,7 @@ const ClientElement = (props) => {
       "div",
       { className: "copyValueToClip clientHeader" },
       getPeriod(client_period) + " | ",
-      e("label", { className: "clientProjectName" }, props.name)
+      e("label", { className: "projectName" }, props.name)
       // [...client_roles].join(", ")
     ),
     e(

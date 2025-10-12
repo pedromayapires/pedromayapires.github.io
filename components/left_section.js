@@ -9,11 +9,11 @@ const LeftSection = (props) => {
   return e(
     "div",
     null,
-    e(
-      "div",
-      { id: "photoContainer" },
-      e("img", { id: "photo", src: "./imgs/photo.png" })
-    ),
+    // e(
+    //   "div",
+    //   { id: "photoContainer" },
+    //   e("img", { id: "photo", src: "./imgs/photo.png" })
+    // ),
     e(Contacts, props.personal_info),
     e(Roles, props),
     e(Tech, props),

@@ -1,4 +1,4 @@
-import DegreeElement from './left_degree_element.js';
+import DegreeElement from "./left_degree_element.js";
 const e = React.createElement;
 
 const Degrees = (props) => {
@@ -6,16 +6,16 @@ const Degrees = (props) => {
   for (let i = 0; i < props.degrees.length; i++) {
     degreeArray.push(
       e(DegreeElement, {
-        key: 'degreeElement' + i,
-        ...props.degrees[i]
+        key: "degreeElement" + i,
+        ...props.degrees[i],
       })
     );
   }
 
   return e(
-    'div',
-    { id: 'degrees' },
-    e('div', { className: 'leftCategories' }, 'Degree'),
+    "div",
+    { id: "degrees" },
+    e("div", { className: "leftCategories" }, "Education"),
     degreeArray
   );
 };
