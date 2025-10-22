@@ -26,7 +26,7 @@ const Tech = (props) => {
   return e(
     "div",
     null,
-    e("div", { className: "leftCategories" }, "Tech experience"),
+    e("div", { className: "leftCategories" }, "Highlighted tech"),
     e("div", { id: "tech" }, techElementArray)
   );
 };

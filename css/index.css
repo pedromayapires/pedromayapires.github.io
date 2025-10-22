@@ -23,8 +23,12 @@ h4 {
 
 .contactType,
 .degreeType,
-.language{
+.languageLabel{
   font-weight: 600;
+  margin-right: 5px;
+}
+
+.languageValue{
   margin-right: 5px;
 }
 
@@ -76,6 +80,7 @@ h4 {
   margin: 5px;
 }
 
+.languages,
 #tech,
 #roles {
   display: flex;
@@ -144,8 +149,8 @@ h4 {
   /* border-bottom: 1px solid black; */
 }
 
-.degrees,
-.languages {
+#degrees,
+#languages {
   margin: 10px 0 10px 0;
 }
 

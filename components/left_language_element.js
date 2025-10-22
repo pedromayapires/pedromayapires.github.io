@@ -2,10 +2,10 @@ const e = React.createElement;
 
 const LanguageElement = (props) => {
   return e(
-    'div',
+    "div",
     null,
-    e('label', { className: 'language' }, props.language + ':'),
-    e('label', null, props.level)
+    e("label", { className: "languageLabel" }, props.language + ":"),
+    e("label", { className: "languageValue" }, props.level)
   );
 };
 

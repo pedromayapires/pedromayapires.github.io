@@ -50,7 +50,7 @@ const ClientElement = (props) => {
       e(
         "p",
         {},
-        e("label", { className: "projectLabel" }, "Team size: "),
+        e("label", { className: "projectLabel" }, "Dev team size: "),
         project.team_size
       ),
       e(

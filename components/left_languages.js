@@ -1,4 +1,4 @@
-import LanguageElement from './left_language_element.js';
+import LanguageElement from "./left_language_element.js";
 const e = React.createElement;
 
 const Languages = (props) => {
@@ -6,17 +6,17 @@ const Languages = (props) => {
   for (let i = 0; i < props.languages.length; i++) {
     languageArray.push(
       e(LanguageElement, {
-        key: 'languageElement' + i,
-        ...props.languages[i]
+        key: "languageElement" + i,
+        ...props.languages[i],
       })
     );
   }
 
   return e(
-    'div',
-    { id: 'languages' },
-    e('div', { className: 'leftCategories' }, 'Languages'),
-    languageArray
+    "div",
+    { id: "languages" },
+    e("div", { className: "leftCategories" }, "Languages"),
+    e("div", { className: "languages" }, languageArray)
   );
 };
 

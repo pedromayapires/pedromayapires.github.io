@@ -13,8 +13,7 @@ var DATA = {
     {
       name: "Computer engineering",
       // period: [ '2004-09-15', '2010-09-15' ],
-      location:
-        "Faculdade de Ciências e Tecnologia da Universidade Nova de Lisboa",
+      location: "F.C.T. Universidade Nova de Lisboa",
     },
     // {
     //   name: 'Mathematics',
@@ -32,10 +31,10 @@ var DATA = {
       language: "English",
       level: "Fluent",
     },
-    {
-      language: "Spanish",
-      level: "Basic level",
-    },
+    // {
+    //   language: "Spanish",
+    //   level: "Basic level",
+    // },
   ],
   // tech_to_highlight: [
   //   "Python",
@@ -59,6 +58,7 @@ var DATA = {
   // },
   tech_to_ignore: {
     "ID software": true,
+    Ldap: true,
     Rest: true,
     Git: true,
     Agile: true,
@@ -76,22 +76,20 @@ var DATA = {
     PHP: true,
     Mercurial: true,
     Jquery: true,
-    "Google functions": true,
     "Git lab": true,
     SupervisorD: true,
     "Co-Pilot": true,
     Virtualbox: true,
     AngularJs: true,
     Javascript: true,
-    Panda: true,
-    Numpy: true,
     Postman: true,
-    Dapr: true,
     NodeJs: true,
     React: true,
     Scrapy: true,
     "Beautiful Soup": true,
     Webhooks: true,
+    "Sql Server": true,
+    Dapr: true,
   },
   clients: [
     {
@@ -449,7 +447,7 @@ var DATA = {
             "Javascript",
             "Jquery",
             "Html",
-            "MySql",
+            "Sql Server",
             "CSS",
             "Git",
             "Ldap",
@@ -479,7 +477,7 @@ var DATA = {
             "Javascript",
             "Jquery",
             "Html",
-            "MySql",
+            "Sql Server",
             "CSS",
             "Git",
             "Ldap",
@@ -515,6 +513,7 @@ var DATA = {
             "Javascript",
             "Jquery",
             "Html",
+            "Ldap",
             "MySql",
             "Soap",
             "Rest",
