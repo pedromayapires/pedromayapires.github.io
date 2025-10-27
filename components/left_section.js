@@ -1,6 +1,7 @@
 import Contacts from "./left_contacts.js";
 import Roles from "./left_roles.js";
 import Tech from "./left_tech.js";
+import IgnoreTech from "./left_ignore_tech.js";
 import Languages from "./left_languages.js";
 import Degrees from "./left_degrees.js";
 const e = React.createElement;
@@ -18,7 +19,8 @@ const LeftSection = (props) => {
     e(Roles, props),
     e(Tech, props),
     e(Languages, props),
-    e(Degrees, props)
+    e(Degrees, props),
+    e(IgnoreTech, props)
   );
 };
 

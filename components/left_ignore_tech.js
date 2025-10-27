@@ -1,9 +1,9 @@
 import TechElement from "./left_tech_element.js";
 const e = React.createElement;
 
-const Tech = (props) => {
+const IgnoreTech = (props) => {
   let techObj = {};
-  techObj = props.tech_duration;
+  techObj = props.ignore_tech_duration;
 
   // sort
   let keysSorted = Object.keys(techObj).sort(function (a, b) {
@@ -26,9 +26,9 @@ const Tech = (props) => {
   return e(
     "div",
     null,
-    e("div", { className: "leftCategories" }, "Highlighted tech"),
+    e("div", { className: "leftCategories" }, "Other tech"),
     e("div", { className: "tech" }, techElementArray)
   );
 };
 
-export default Tech;
+export default IgnoreTech;

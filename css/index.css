@@ -34,7 +34,8 @@ h4 {
 
 .techRoleP{
   border-bottom: 1px solid black;
-  margin: 4px 0px 4px 0;
+  /* margin: 4px 0px 4px 0; */
+  margin-bottom: 4px;
 }
 
 .techRoleP{
@@ -81,7 +82,7 @@ h4 {
 }
 
 .languages,
-#tech,
+.tech,
 #roles {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +90,7 @@ h4 {
 }
 
 .leftCategories {
-  margin: 15px 0px 5px 0px;
+  margin: 15px 0px 4px 0px;
   font-size: 11pt;
   font-weight: 600;
   text-decoration-line: underline;
@@ -294,6 +295,7 @@ h4 {
     display: none;
   }
 
+  .techRoleP,
   .clientElement {
     break-inside: avoid;
     break-before: auto;

@@ -24,7 +24,7 @@ const Clients = (props) => {
       "div",
       { id: "intro" },
       state.personal_info.intro +
-        " with close to " +
+        " with around " +
         Math.ceil(props["total_experience"] / 12) +
         " years of work experience"
     ),

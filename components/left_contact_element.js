@@ -2,9 +2,9 @@ const e = React.createElement;
 
 const ContactElement = (props) => {
   return e(
-    'div',
+    "div",
     null,
-    e('label', { className: 'contactType' }, props.type + ':'),
+    e("label", { className: "contactType" }, props.type + ":"),
     props.value
   );
 };

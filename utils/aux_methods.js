@@ -18,6 +18,7 @@ const getTotalMonths = (fromDateStr, toDateStr = null) => {
 
 const updateTechAndRoles = (jsonData) => {
   let techDuration = {};
+  let ignoreTechDuration = {};
   let roleDuration = {};
 
   let projects = [];
@@ -38,12 +39,21 @@ const updateTechAndRoles = (jsonData) => {
       tech = projects[p].tech;
       // iterate through tech
       for (let s = 0; s < tech.length; s++) {
-        if (tech[s] in jsonData.tech_to_ignore) {
-          continue;
-        }
+        // if (tech[s] in jsonData.tech_to_ignore) {
+        //   continue;
+        // }
 
-        techDuration[tech[s]] =
-          tech[s] in techDuration ? duration + techDuration[tech[s]] : duration;
+        if (tech[s] in jsonData.tech_to_highlight) {
+          techDuration[tech[s]] =
+            tech[s] in techDuration
+              ? duration + techDuration[tech[s]]
+              : duration;
+        } else {
+          ignoreTechDuration[tech[s]] =
+            tech[s] in ignoreTechDuration
+              ? duration + ignoreTechDuration[tech[s]]
+              : duration;
+        }
       }
 
       roles = projects[p].roles;
@@ -58,6 +68,7 @@ const updateTechAndRoles = (jsonData) => {
   }
 
   jsonData["tech_duration"] = techDuration;
+  jsonData["ignore_tech_duration"] = ignoreTechDuration;
   jsonData["role_duration"] = roleDuration;
   jsonData["total_experience"] = totalExperience;
   return jsonData;
