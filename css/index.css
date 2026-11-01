@@ -295,8 +295,21 @@ h4 {
     display: none;
   }
 
-  .techRoleP,
+  /* .techRoleP,
   .clientElement {
+    break-inside: avoid;
+    break-before: auto;
+    break-after: auto;
+  } */
+
+  /* not working -->>>
+  .techRoleP{
+    break-inside: avoid;
+    break-before: auto;
+    break-after: auto;
+  } */
+
+  .project{
     break-inside: avoid;
     break-before: auto;
     break-after: auto;

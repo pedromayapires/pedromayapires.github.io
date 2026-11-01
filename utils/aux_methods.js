@@ -27,13 +27,16 @@ const updateTechAndRoles = (jsonData) => {
   let roles = [];
   let duration = 0;
   let totalExperience = 0;
+
+  let todayDate = new Date().toISOString().slice(0, 10);
+
   // iterate through clients
   for (let c = 0; c < jsonData.clients.length; c++) {
     projects = jsonData.clients[c].projects;
     // iterate through projects
     for (let p = 0; p < projects.length; p++) {
       period = projects[p].period;
-      duration = getTotalMonths(period[0], period[1]);
+      duration = getTotalMonths(period[0], period[1] ?? todayDate);
       totalExperience += duration;
 
       tech = projects[p].tech;

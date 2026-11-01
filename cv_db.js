@@ -59,6 +59,7 @@ var DATA = {
     Azure: true,
     "Google functions": true,
     "Co-Pilot": true,
+    "Azure Data Lake": true,
   },
   // ]),
   // extra_tech_to_add: {
@@ -70,7 +71,56 @@ var DATA = {
       name: "Abelhas Intemporais",
       projects: [
         {
-          name: "ScalaBit",
+          name: "GBL - Siemens",
+          team_size: 8,
+          period: ["2026-04-20"],
+          roles: ["Backend", "Frontend", "Database Architect", "AI Developer"],
+          goals: [
+            "Created and added features to the backend and frontend with some AI assistance",
+            "Fixed some AI code making it work as intended",
+            "Database modification, optimization and updates",
+            "Conducted code reviews and helped with project management",
+            "The product was developed with some assistance of ClaudeCode",
+          ],
+          tech: [
+            "Agile",
+            "Python",
+            "Git",
+            "Rest",
+            "FastAPI",
+            "PyTest",
+            "Docker",
+            "React",
+            "ClaudeCode",
+            "AI",
+            "Azure",
+          ],
+        },
+        {
+          name: "Abelhas Intemporais",
+          team_size: 1,
+          period: ["2025-09-09", "2026-04-01"],
+          roles: ["Backend", "Frontend", "Database Architect", "AI Developer"],
+          goals: [
+            "Investigation into AI development tools",
+            "Making of a net security watcher software",
+            "Database creation, modification and updates",
+            "Gaming software tutorials (Unreal Engine)",
+          ],
+          tech: [
+            "Python",
+            "Git",
+            "Rest",
+            "FastAPI",
+            "PyTest",
+            "Docker",
+            "React",
+            "Gemini",
+            "AI",
+          ],
+        },
+        {
+          name: "ScalaBit - ASML",
           team_size: 6,
           period: ["2025-05-12", "2025-09-02"],
           roles: ["Backend", "DevOps"],
@@ -119,7 +169,7 @@ var DATA = {
       name: "Ausy",
       projects: [
         {
-          name: "A.I.",
+          name: "Ausy France",
           team_size: 1,
           period: ["2024-04-02", "2024-07-15"],
           roles: ["Backend"],
@@ -138,7 +188,7 @@ var DATA = {
           ],
         },
         {
-          name: "Microservices",
+          name: "Ausy Belgium",
           team_size: 3,
           period: ["2022-07-18", "2024-04-02"],
           roles: ["Backend"],
@@ -167,7 +217,7 @@ var DATA = {
       name: "Dohop",
       projects: [
         {
-          name: "Travelling search engine",
+          name: "Dohop - Travelling search engine",
           team_size: 3,
           period: ["2021-02-02", "2021-09-02"],
           roles: ["Backend"],
@@ -192,7 +242,7 @@ var DATA = {
       name: "Affinity",
       projects: [
         {
-          name: "Travelling search engine",
+          name: "Dohop - Travelling search engine",
           team_size: 4,
           period: ["2019-10-02", "2020-05-02"],
           roles: ["Backend", "Database Architect", "Team leader"],
@@ -216,7 +266,7 @@ var DATA = {
           ],
         },
         {
-          name: "Food supplements",
+          name: "Kenko - Food supplements",
           team_size: 3,
           period: ["2019-07-02", "2019-10-02"],
           roles: ["Backend", "Frontend"],
@@ -236,7 +286,7 @@ var DATA = {
           ],
         },
         {
-          name: "Security software",
+          name: "Probe.ly - Security software",
           team_size: 2,
           period: ["2019-04-02", "2019-07-02"],
           roles: ["Backend", "Frontend"],
@@ -259,7 +309,7 @@ var DATA = {
           ],
         },
         {
-          name: "Sourcing services",
+          name: "Daymon Worldwide - Sourcing services",
           team_size: 1,
           period: ["2018-10-02", "2019-04-02"],
           roles: ["Backend", "Project manager", "Database Architect"],
@@ -285,7 +335,7 @@ var DATA = {
           ],
         },
         {
-          name: "Product assortment for retailers",
+          name: "Dunnhumby - Product assortment for retailers",
           team_size: 7,
           period: ["2018-04-02", "2018-10-02"],
           roles: ["Backend", "DevOps"],
@@ -311,6 +361,7 @@ var DATA = {
             "Ubuntu",
             "AWS",
             "Rest",
+            "Azure Data Lake",
           ],
         },
       ],
@@ -319,7 +370,7 @@ var DATA = {
       name: "Babel",
       projects: [
         {
-          name: "Data collector",
+          name: "A.M.A. - Data collector",
           team_size: 3,
           period: ["2017-12-26", "2018-04-02"],
           roles: [
@@ -356,7 +407,7 @@ var DATA = {
       name: "Agap2It",
       projects: [
         {
-          name: "Script maintenance and application testing",
+          name: "StreamBow",
           team_size: 1,
           period: ["2017-09-11", "2017-11-02"],
           roles: ["Backend", "Database Architect"],
@@ -372,7 +423,7 @@ var DATA = {
       name: "Leads4Sales",
       projects: [
         {
-          name: "Marketing & Call center",
+          name: "Leads4Sales - Marketing & Call center",
           team_size: 6,
           period: ["2016-06-02", "2017-09-02"],
           roles: ["Backend", "Frontend", "Database Architect"],
@@ -402,7 +453,7 @@ var DATA = {
       name: "Instituto de Medicina Molecular",
       projects: [
         {
-          name: "H.R. Manager",
+          name: "I.M.M. - H.R. Manager",
           team_size: 1,
           period: ["2016-03-02", "2016-06-02"],
           roles: [
@@ -431,7 +482,7 @@ var DATA = {
           ],
         },
         {
-          name: "Resource, user and document manager",
+          name: "I.M.M. - Resource, user and document manager",
           team_size: 1,
           period: ["2015-09-02", "2016-03-02"],
           roles: [
@@ -466,7 +517,7 @@ var DATA = {
       name: "Instituto Gulbenkian de ciência",
       projects: [
         {
-          name: "Document manager",
+          name: "I.G.C. - Document manager",
           team_size: 1,
           period: ["2013-01-02", "2015-07-02"],
           roles: [
@@ -498,7 +549,7 @@ var DATA = {
           ],
         },
         {
-          name: "Resource manager",
+          name: "I.G.C. - Resource manager",
           team_size: 4,
           period: ["2010-12-02", "2013-01-02"],
           roles: ["Backend", "Frontend", "Database Architect"],
@@ -526,7 +577,7 @@ var DATA = {
       name: "PT-SI",
       projects: [
         {
-          name: "Document manager with Alfresco",
+          name: "PT-SI - Document manager with Alfresco",
           team_size: 3,
           period: ["2010-05-02", "2010-11-02"],
           roles: ["Backend", "Frontend"],
@@ -547,7 +598,7 @@ var DATA = {
           ],
         },
         {
-          name: "Document manager with KnowledgeTree",
+          name: "PT-SI - Document manager with KnowledgeTree",
           team_size: 3,
           period: ["2010-03-15", "2010-05-02"],
           roles: ["Backend", "Frontend"],

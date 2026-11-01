@@ -33,32 +33,32 @@ const ClientElement = (props) => {
   const getProjectData = (project) => {
     return e(
       "div",
-      {},
+      { className: "project" },
       e(
         "p",
         { className: "clientProjectHeader" },
         e("label", {}, " - " + project.name + " | "),
-        e("label", { className: "projectRoles" }, project.roles.join(", "))
+        e("label", { className: "projectRoles" }, project.roles.join(", ")),
       ),
       e(
         "div",
         { className: "clientProjectGoals" },
         project.goals.map((goal) =>
-          e("p", { className: "clientProjectGoal" }, " • " + goal)
-        )
+          e("p", { className: "clientProjectGoal" }, " • " + goal),
+        ),
       ),
       e(
         "p",
         {},
         e("label", { className: "projectLabel" }, "Dev team size: "),
-        project.team_size
+        project.team_size,
       ),
       e(
         "p",
         { className: "clientTechnologies" },
         e("label", { className: "projectLabel" }, "Tech used: "),
-        project.tech.join(", ")
-      )
+        project.tech.join(", "),
+      ),
     );
   };
 
@@ -89,14 +89,14 @@ const ClientElement = (props) => {
       "div",
       { className: "copyValueToClip clientHeader" },
       getPeriod(client_period) + " | ",
-      e("label", { className: "projectName" }, props.name)
+      e("label", { className: "projectName" }, props.name),
       // [...client_roles].join(", ")
     ),
     e(
       "p",
       { className: "clientProjectData" },
-      ...props.projects.map((project, index) => getProjectData(project))
-    )
+      ...props.projects.map((project, index) => getProjectData(project)),
+    ),
   );
 };
 

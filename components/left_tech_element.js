@@ -13,7 +13,7 @@ const TechElement = (props) => {
     "div",
     { className: "techRoleP" },
     e("div", { className: "techRoleLabel" }, props.tech + ":"),
-    e("div", { className: "techRoleDuration" }, e("label", {}, years + months))
+    e("div", { className: "techRoleDuration" }, e("label", {}, years + months)),
   );
 };
 
